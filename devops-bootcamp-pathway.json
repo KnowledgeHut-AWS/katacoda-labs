@@ -6,6 +6,11 @@
       "course_id": "os-basics-01-linux",
       "title": "Operating System Basics 01 Linux",
       "description": "A 1-day course on Bash"
+    },
+    {
+      "course_id": "python-101",
+      "title": "Python 101",
+      "description": "Python 101"
     }
   ]
 }
