@@ -1,0 +1,13 @@
+{
+  "title": "DevOps Bootcamp",
+  "description": "From Zero to Hero",
+  "courses": [
+    {
+      "pathway_id": "knowledgehut/devops-bootcamp",
+      "id": "os-basics-01-linux",
+      "course_id": "os-basics-01-linux",
+      "title": "Operating System Basics 01 Linux",
+      "description": "A 1-day course on Bash"
+    }
+  ]
+}
