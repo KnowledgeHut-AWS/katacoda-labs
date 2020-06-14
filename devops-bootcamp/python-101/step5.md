@@ -142,6 +142,6 @@ Notice contents of the `dist` directory you'll see a versioned sources pakcage a
 
 `ls -l dist`{{execute}}
 
-Change out of the project root directory 
+Change out of the project root directory
 
 `cd ..`{{execute}}

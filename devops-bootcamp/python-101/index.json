@@ -6,23 +6,23 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Simple python program",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Python Modules",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Exectuable Modules",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Python classes",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Building Python Module",
         "text": "step5.md"
       },
       {
