@@ -1,74 +1,147 @@
-# Common PIP commands
+# Building Python Module
 
-When you install pip, a pip command is added to your system, which can be run from the command prompt as follows:
+Make a directory `my_example_project`
 
-`pip <pip arguments>`
+`mkdir my_example_project`{{execute}}
+`cd my_example_project`{{execute}}
 
-If you cannot run the pip command directly (possibly because the location where it was installed isn’t on your operating system’s PATH) then you can run pip via the Python interpreter:
+Create the `setup.py` file,
 
-`python -m pip <pip arguments>`
+`touch setup.py`{{execute}}
 
-On Windows, the py launcher can be used:
+Add following code to the setup file
 
-`py -m pip <pip arguments>`
+<pre class="file" data-filename="setup.py" data-target="replace">
+import setuptools
 
-The most common scenario is to install from PyPI using requirement specifiers
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
-`pip install SomePackage`            # latest version
-`pip install SomePackage==1.0.4`     # specific version
-`pip install 'SomePackage>=1.0.4'`     # minimum version
+setuptools.setup(
+    name="example-pkg-kh-anadi", # Replace with your own module name
+    version="0.0.1",
+    author="Anadi Misra", # Replace with your name, unless you wanna make me famous :-)
+    author_email="anadi@knwoledgehut.co", # Replace with your email, or spam expose Bryan :-P
+    description="A small example package",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/knowledgehut-aws/python-101",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
+)
+</pre>
 
-Installing from a requirements file, let's say we have a `requirements.txt` with following content
+Add simple `README.md` file
 
-```text
-sphinx
-more-itertools
-pyyaml
-mock
-argparse
-```
+`touch README.md`{{execute}}
 
-`pip` can install all the dependencies from this file through the command
+Add following makrdown code to this file
 
-`pip install -r requirements.txt`
+<pre class="file" data-filename="README.md" data-target="replace">
+# Example Package
 
-While `requirements.txt` lists ala dependencies, the `constaints.txt` file, only control which version of a requirement is installed, not whether it is installed or not. You can use containts file for pip installation as follows:
+This is a simple example package. You can use [Github-flavored Markdown](https://guides.github.com/features mastering-markdown/) to write your content.
+</pre>
 
-`pip install -c constraints.txt`
+Add a license file
 
-“Wheel” is a built, archive format that can greatly speed installation compared to building and installing from source archives. `pip` prefers Wheels where they are available. To install from a wheel 
+`touch LICENSE`{{execute}}
 
-`pip install SomePackage-1.0-py2.py3-none-any.whl`
+<pre class="file" data-filename="LICENSE" data-target="replace">
+Copyright (c) 2020 The Python Packaging Authority Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</pre>
 
-For the cases where wheels are not available, pip offers pip wheel as a convenience, to build wheels for all your requirements and dependencies.
+Create a package folder `example_pkg_kh`
 
-pip wheel requires the wheel package to be installed, which provides the “bdist_wheel” setuptools extension that it uses.
+`mkdir example_pkg_kh`{{execute}}
 
-`pip install wheel`
-`pip wheel --wheel-dir=/local/wheels -r requirements.txt`
+Add tests source folder
 
-to install those requirements just using your local directory of wheels
+`mkdir tests`{{execute}}
 
-`pip install --no-index --find-links=/local/wheels -r requirements.txt`
+Change to the Test directory and add a unit test
 
-To uninstall a package
+`cd tests`{{execute}}
 
-`pip uninstall SomePackage`
+Add the following unit tests
 
-To list installd package
+<pre class="file" data-filename="test_calculator.py" data-target="replace">
+import unittest
+from example_pkg_kh.calculator import Calculator
+class TestCalculator(unittest.TestCase):
+    def test_returns_0_for_empty_arguments(self):
+        calc = Calculator()
+        self.assertEqual(0, calc.sum())
+    def test_returns_sum(self):
+        calc = Calculator()
+        self.assertEqual(3, calc.sum(1, 2))
+</pre>
+
+We need to add an `__init__.py` file to this directory
+
+touch `__init__.py`{{execute}}
+
+***Note***: The `__init__.py` files are required to make Python treat the directories as containing packages; this is done to prevent directories with a common name, such as string, from unintentionally hiding valid modules that occur later on the module search path.
+
+Go to the `example_pkg` directory and add `calculator.py` file as follows
+
+`cd ..`{{execute}}
+
+`cd example_pkg_kh`{{execute}}
+
+`touch calculator.py`{{execute}}
+
+<pre class="file" data-filename="calculator.py" data-target="replace">
+class Calculator:
+    def sum(self, a = 0, b = 0):
+        return (a + b)
+</pre>
+
+We also need to create the `__init__.py` file
+
+`touch __init__.py`{{execute}}
+
+The final directory strcuture would look like this
 
 ```bash
-pip list
+my_python_project
+├── README.md
+├── example_pkg_kh
+│   ├── __init__.py
+│   └── calculator.py
+├── setup.py
+└── tests
+    ├── __init__.py
+    └── test_calculator.py
 ```
 
-To list outdated packages, and show the latest version available:
+Run the unit tests from `my_example_project` directory
 
-`pip list --outdated`
+`cd ..`{{execute}}
 
-To show details about an installed package:
+`python -m unittest discover -v`{{execute}}
 
-`pip show sphinx`
+Our code is now ready to be released as a package
 
-To search for a package
+Install or updgrade the following modules for running python module build
 
-`pip search "sphinx"`
+`python -m pip install --upgrade pip setuptools wheel`{{execute}}
+`python -m pip install --upgrade tqdm`{{execute}}
+`python -m pip install --upgrade twine`{{execute}}
+
+Build the package
+
+`python setup.py sdist bdist_wheel`{{execute}}
+
+Notice contents of the `dist` directory you'll see a versioned sources pakcage and a .`whl` file which is the python module that can be publishd in `pypi` and distributed.
+
+`ls -l dist`{{execute}}
+
+Change out of the project root directory 
+
+`cd ..`{{execute}}

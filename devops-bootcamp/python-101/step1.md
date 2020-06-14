@@ -1,21 +1,22 @@
-# Python Modules
+# Simple python program
 
-Python modules help organise code into logical groups which can then be reused in other programs or run from the command line as shell scripts.
+Create python file `greeting.py`
 
-We will create a simple python module which calculates fibbonaci series for the given number. Create file `kh_module.py` with following code
+`touch greeting.py`{{execute}}
 
-```python
-def fibonacci(n):    # write Fibonacci series up to n
-    a, b = 0, 1
-    while a < n:
-        print(a, end=' ')
-        a, b = b, a+b
-    print()
-```
+<pre class="file" data-filename="greeting.py" data-target="replace">
+from datetime import datetime
 
-Python will asuume hte module name to be kh_mdoule (from file name.) Now let's look at how python modules can be reused. This module has to be explicitly imported before we can use any of it's methods. To import and run it as a module run the following commands
+odds = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 51, 53, 55, 57, 59]
 
-`import kh_module`{{execute}}
-`kh_module.fibbonaci(20)`{{execute}}
+right_this_minute = datetime.today().minute
 
-Notice the output. Modules such as this tyically serve the purpose as a library that is included in a program or other modules.
+if right_this_minute in odds:
+    print("This minute seems a tad bit odd!")
+else:
+    print("I'm all good lads!")
+</pre>
+
+Run the file with following command
+
+`python greeting.py`{{execute}}

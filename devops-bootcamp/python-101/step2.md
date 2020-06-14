@@ -1,14 +1,34 @@
-# Eeectuable Modules
+# Python Modules
 
-To create an 'executable' module, i.e. modules that can run from the command line with python interpreter we need to make some changes. Open the `kh_module.py`{{open}} and add following code to the end of file
+Python modules help organise code into logical groups which can then be reused in other programs or run from the command line as shell scripts.
 
-```python
-if __name__ == "__main__":
-    import sys
-    fibonacci(int(sys.argv[1]))
-```
+We will create a simple python module which calculates fibbonaci series for the given number. Create file `kh_module.py`
 
-1. We've created a main method which calls the fibbonaci serires function
-2. You can see that `import` is a scoped statements which means you can import for the entire module or import for particular method
+`touch kh_module.py`{{execute}}
 
-To run this module now simply run `python kh_module.py`{{execute}}
+Add following to code to the file
+
+<pre class="file" data-filename="kh_module.py" data-target="replace">
+def fibonacci(n):    # write Fibonacci series up to n
+    a, b = 0, 1
+    while a <pre n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+</pre>
+
+Python will asuume hte module name to be kh_mdoule (from file name.) Now let's look at how python modules can be reused. This module has to be explicitly imported before we can use any of it's methods. To import and run it as a module in the python shell run the following commands
+
+Start the python shell
+`python`{{execute}}
+
+immport module and run `fibonacci` method
+
+`import kh_module`{{execute}}
+`kh_module.fibbonaci(20)`{{execute}}
+
+Notice the output. Modules such as this tyically serve the purpose as a library that is included in a program or other modules.
+
+You may exit the python shell
+
+`exit()`{{execute}}

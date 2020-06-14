@@ -1,20 +1,12 @@
-# Simple python program
+# Python 101
 
-Create python file `greeting.py` with following code
+This course takes you through the following exercises in Python
 
-```python
-from datetime import datetime
+1. Creating and running a simple python script
+2. Modules in python
+3. Executable modules
+4. Classes in python
+5. Building a module in python
+6. Common package management commands
 
-odds = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 51, 53, 55, 57, 59]
-
-right_this_minute = datetime.today().minute
-
-if right_this_minute in odds:
-    print("This minute seems a tad bit odd!")
-else:
-    print("I'm all good lads!")
-```{{copy}}
-
-Run the file with following command
-
-`python greeting.py`{{execute}}
+Happy Learning!

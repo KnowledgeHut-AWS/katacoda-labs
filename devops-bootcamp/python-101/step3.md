@@ -1,22 +1,15 @@
-# Python classes
+# Eeectuable Modules
 
-## Simple python class example
+To create an 'executable' module, i.e. modules that can run from the command line with python interpreter we need to make some changes. Open the `kh_module.py`{{open}} and add following code to the end of file
 
-Create file `person.py`{{open}} with following content
+<pre class="file" data-filename="kh_module.py" data-target="append">
 
-```python
-class Person:
-    def __init__(self, firstName, lastName = ""):
-        super().__init__()
-        self.firstName = firstName
-        self.lastName = lastName
+if __name__ == "__main__":
+    import sys
+    fibonacci(int(sys.argv[1]))
+</pre>
 
-    def whoAmI(self):
-        return self.firstName + " " + self.lastName
-```
+1. We've created a main method which calls the fibbonaci serires function
+2. You can see that `import` is a scoped statements which means you can import for the entire module or import for particular method
 
-Execute the following commands to run this class file 
-
-1. `from person import Person`{{execute}}
-2. `jason = Person("David", "Weber")`{{execute}}
-3. `jason.whoAmI()`{{execute}}
+To run this module now simply run `python kh_module.py`{{execute}}
