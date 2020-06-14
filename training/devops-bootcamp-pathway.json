@@ -10,18 +10,25 @@
       "description": "A 1-day course on Bash"
     },
     {
-      "pathway_id": "knowledgehut/python-101",
+      "pathway_id": "knowledgehut/devops-bootcamp",
       "id": "python-101",
       "course_id": "python-101",
       "title": "Python 101",
       "description": "A 1-day course on Python"
     },
     {
-      "pathway_id": "knowledgehut/anaconda-101",
-      "id": "anacoda-101",
+      "pathway_id": "knowledgehut/devops-bootcamp",
+      "id": "anaconda-101",
       "course_id": "anaconda-101",
       "title": "Aanaconda Python",
       "description": "Anaconda Python Distribution"
-    }    
+    },
+    {
+      "pathway_id": "knowledgehut/devops-bootcamp",
+      "id": "data-visualisations",
+      "course_id": "data-viz-101",
+      "title": "Python Data Visualisations",
+      "description": "Using pandas and matplotlib to build visualisations in Python"
+    }     
   ]
 }

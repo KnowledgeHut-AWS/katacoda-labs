@@ -1,0 +1,31 @@
+{
+  "title": "Data Visualisation in Python",
+  "description": "Using pandas and matplotlib to build visualisations in Python",
+  "difficulty": "Beginner",
+  "time": "30",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "jupyterhub",
+    "port": "9999"
+  }
+}
