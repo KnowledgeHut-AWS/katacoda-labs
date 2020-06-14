@@ -2,7 +2,7 @@
 
 **Note** You may delete all files created in previous stesp via `rm -rf *.py` for cleagnin up editor widnow before doing these steps ***optional step***
 
-Make a directory `my_example_project`{{execute}}
+Make a directory `mkdir -p my_example_project`{{execute}}
 
 Create the `my_example_project/setup.py`{{open}} file; this file defines all the build information for the module.
 
