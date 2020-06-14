@@ -59,7 +59,6 @@ Add a unit test to the tests directory `my_example_project/tests/test_calculator
 
 <pre class="file" data-filename="my_example_project/tests/test_calculator.py" data-target="replace">
 import unittest
-<<<<<<< HEAD
 
 from example_pkg_kh.calculator import Calculator
 
