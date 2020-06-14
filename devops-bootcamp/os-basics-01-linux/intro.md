@@ -1,7 +1,7 @@
 # Operating System Basics 1
 
 ## The things you will use every day
-
+---
 
 #### What is an Operating System
 
@@ -11,11 +11,12 @@ An operating system (OS) is system software that manages computer hardware, soft
 
 Most popular operating systems are  
 
-1. Windows 
+1. Linux 
 
-2. iOS
+2. Windows
 
-3. Linux
+Majority of the servers are running on one of these two operating systems.
+
 
 #### Introduction to Linux operating system
 
@@ -61,38 +62,23 @@ Kernel uses kernel space to provide its services, ultimately to its users
 
 Root is the starting point. Under root, Linux has many directories. Generally these directories are used for specific purpose.
 
-Name  - Used for 
-
-/bin - User Binaries
-
-/sbin - System Binaries
-
-/etc - Configuration Files
-
-/dev - Device Files
-
-/proc - Process Information
-
-/var - Variable Files
-
-/tmp - Temporary Files
-
-/usr - User Programs
-
-/home - Home Directories
-
-/boot - Boot Loader Files
-
-/lib - System Libraries
-
-/opt - Optional Applications
-
-/mnt - Mount Directory
-
-/Media - Removable Device
-
-/srv - Service Data
-
+| Directory Name | Used for              |
+|----------------|-----------------------|
+| /bin           | User Binaries         |
+| /sbin          | System Binaries       |
+| /etc           | Configuration Files   |
+| /dev           | Device Files          |
+| /proc          | Process Information   |
+| /var           | Variable Files        |
+| /tmp           | Temporary Files       |
+| /usr           | User Programs         |
+| /home          | Home Directories      |
+| /boot          | Boot Loader Files     |
+| /lib           | System Libraries      |
+| /opt           | Optional Applications |
+| /mnt           | Mount Directory       |
+| /Media         | Removable Device      |
+| /srv           | Service Data          |
 
 #### Various Linux Distributions
 

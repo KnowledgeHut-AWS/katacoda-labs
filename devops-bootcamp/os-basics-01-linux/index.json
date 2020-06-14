@@ -9,81 +9,81 @@
         "title": "Archeology",
         "text": "01 - Archeology.md"
       },
+	  {
+        "title": "Basics",
+        "text": "02-basics.md"
+      },
       {
         "title": "Files",
-        "text": "02-files.md"
+        "text": "03-files.md"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "File Contents",
+        "text": "04_1-file conents.md"
+      },
+	   {
+        "title": "System and Service Manager",
+        "text": "04_2-Systemd.md"
+      }, 
+      {
+        "title": "Linux Text Editor vi",
+        "text": "05-vi.md"
       },
       {
-        "title": "Step 4",
-        "text": "step4.md"
+        "title": "System and Networking",
+        "text": "06-system and networking.md"
       },
       {
-        "title": "Step 5",
-        "text": "step5.md"
+        "title": "Pipes and Redirects",
+        "text": "07-pipews and redirects.md"
       },
       {
-        "title": "Step 6",
-        "text": "step6.md"
+        "title": "Bash Shell Scripting Definition",
+        "text": "08-Bash Shell Scripting Definition.md"
       },
       {
-        "title": "Step 7",
-        "text": "step7.md"
+        "title": "Relative vs Absolute Path",
+        "text": "09-Relative vs Absolute Path.md"
       },
       {
-        "title": "Step 8",
-        "text": "step8.md"
+        "title": "Hello World Bash Shell Script",
+        "text": "10 - Hello World Bash Shell Script.md"
       },
       {
-        "title": "Step 9",
-        "text": "step9.md"
+        "title": "Simple Backup Bash Shell Script",
+        "text": "11-Simple Backup Bash Shell Script.md"
       },
       {
-        "title": "Step 10",
-        "text": "step10.md"
+        "title": "Variables",
+        "text": "12-Variables.md"
       },
       {
-        "title": "Step 11",
-        "text": "step11.md"
+        "title": "Input, Output and Error Redirections",
+        "text": "13-Input, Output and Error Redirections.md"
       },
       {
-        "title": "Step 12",
-        "text": "step12.md"
+        "title": "Functions",
+        "text": "14-functions.md"
       },
       {
-        "title": "Step 13",
-        "text": "step13.md"
+        "title": "Numeric and String Comparisons",
+        "text": "15-Numeric and String Comparisons.md"
       },
       {
-        "title": "Step 14",
-        "text": "step14.md"
+        "title": "Conditional Statements",
+        "text": "16-Conditional Statements.md"
       },
       {
-        "title": "Step 15",
-        "text": "step15.md"
+        "title": "Positional Parameters",
+        "text": "17-Positional Parameters.md"
       },
       {
-        "title": "Step 16",
-        "text": "step16.md"
+        "title": "Bash Loops",
+        "text": "18-Bash Loops.md"
       },
       {
-        "title": "Step 17",
-        "text": "step17.md"
-      },
-      {
-        "title": "Step 18",
-        "text": "step18.md"
-      },
-      {
-        "title": "Step 19",
-        "text": "step19.md"
-      },
-      {
-        "title": "Step 20",
-        "text": "step20.md"
+        "title": "Conclusion",
+        "text": "Conclusion.md"
       }
     ],
     "intro": {
