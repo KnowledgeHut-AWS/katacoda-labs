@@ -67,7 +67,7 @@ filteredData.head()
 filteredData.Sport.value_counts().plot(kind='bar')
 ```
 
-1[Bar Chart Graph](./assets/graph-1.png)
+![Bar Chart Graph](./assets/graph-1.png)
 
 **We can also get the Horizontal plot using the following code**
 
@@ -87,4 +87,4 @@ filteredData.head()
 filteredData.Sport.value_counts().plot(kind='pie')
 ```
 
-1[Pie Chart Graph](./assets/graph-3.png)
+![Pie Chart Graph](./assets/graph-3.png)
