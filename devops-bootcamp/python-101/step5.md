@@ -59,14 +59,19 @@ Add a unit test to the tests directory `my_example_project/tests/test_calculator
 
 <pre class="file" data-filename="my_example_project/tests/test_calculator.py" data-target="replace">
 import unittest
- from example_pkg_kh.calculator import Calculator
-class TestCalculator(unittest.TestCase):
-    def test_returns_0_for_empty_arguments(self):
-        calc = Calculator()
-        self.assertEqual(0, calc.sum())
-    def test_returns_sum(self):
-        calc = Calculator()
-        self.assertEqual(3, calc.sum(1, 2))
+
+from example_pkg_kh.calculator import Calculator
+
+class TestCalculator(unittest.TestCase):
+		
+	def test_returns_0_for_empty_arguments(self):
+		calc = Calculator()
+		self.assertEqual(0, calc.sum())
+
+	def test_returns_sum(self):
+		calc = Calculator()
+		self.assertEqual(3, calc.sum(1, 2))
+
 </pre>
 
 We need to add an `__init__.py` file to this directory
@@ -79,8 +84,10 @@ Add a simple calculator with a sum method `my_example_project/example_pkg_kh/cal
 
 <pre class="file" data-filename="my_example_project/example_pkg_kh/calculator.py" data-target="replace">
 class Calculator:
+
     def sum(self, a = 0, b = 0):
         return (a + b)
+
 </pre>
 
 We also need to create the `__init__.py` file
@@ -111,8 +118,6 @@ Our code is now ready to be released as a package
 Install or updgrade the following modules for running python module build
 
 `python -m pip install --upgrade pip setuptools wheel`{{execute}}
-`python -m pip install --upgrade tqdm`{{execute}}
-`python -m pip install --upgrade twine`{{execute}}
 
 Build the package
 
