@@ -1,4 +1,4 @@
-# Simple python program
+# Writing our first python program
 
 Create python file `greeting.py`
 
