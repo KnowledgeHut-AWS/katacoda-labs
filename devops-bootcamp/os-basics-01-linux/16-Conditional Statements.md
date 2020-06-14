@@ -2,7 +2,7 @@
 
 ## Conditional Statements
 
-In this section, are going to discuss about conditional statements in bash shell scrpting. Using these statement, we can add more logic to our scripts. Fundamental concept is that if certain conditions meets then excute certain other steps.  if not then do something else.
+In this section, are going to discuss about conditional statements in bash shell scripting. Using these statement, we can add more logic to our scripts. Fundamental concept is that if certain conditions meets then execute certain other steps.  if not then do something else.
 
 
 We are going to discuss these three conditionals - `if`, `then` and `else`. For example, we can improve our backup script by comparing number of files exist in the source directory and resulting backup file. If both number matches then only our backup is taken correctly. Otherwise something is not correct.\

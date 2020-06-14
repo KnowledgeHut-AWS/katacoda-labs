@@ -13,13 +13,13 @@ Bash is a command language interpreter. It is widely available on various operat
 
 ###  What is scripting?
 
-Usually shells are interactive. A user enter an command and shell execute it. Sometime we want to run a bunch of commands together and many times it becomes a repeatitive actions. Rather then giving commands manually, we can also write these commands in a file and execute these commands in shell to avoid this repeatative tasks. These files are called Shell Script. Each shell script file is saved as .sh file.
+Usually shells are interactive. A user enter an command and shell execute it. Sometime we want to run a bunch of commands together and many times it becomes a repetitive actions. Rather then giving commands manually, we can also write these commands in a file and execute these commands in shell to avoid this repetitive tasks. These files are called Shell Script. Each shell script file is saved as .sh file.
 
 ### what is bash scripting?
 
-When a user is using bash shell and writting code in bash shell is called bash scripting. To check our default interpreter, please execute this command
+When a user is using bash shell and writing code in bash shell is called bash scripting. To check our default interpreter, please execute this command
 
-`echo `{{execute}}SHELL`{{execute}}
+`echo $SHELL`{{execute}}
 
 In order to define script's interpreter as bash, we need to insert its executable binary with shebang #! at start of the script.
 
@@ -31,7 +31,7 @@ In order to check the file permission, you can run following command, assuming y
 
 ` ls -l`{{execute}}
 
-if file does not have execute permisson then user can run this command to give execute rights.
+if file does not have execute permission then user can run this command to give execute rights.
 
 ` chmod +x filename `{{execute}}
 

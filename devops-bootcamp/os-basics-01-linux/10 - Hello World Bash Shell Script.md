@@ -10,9 +10,9 @@ let's create a file using vi
 
 Now press i , then enter following text
 
-`#!/bin/bash
+`#!/bin/bash`{{execute}}
 
-`echo " Hello World !!"`
+`echo " Hello World !!"`{{execute}}
 
 Now pres Esc key, then :wq , then enter key.
 

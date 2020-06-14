@@ -33,7 +33,7 @@ The core of any Linux Operating System is Linux kernel.
 
 Every Linux Distribution includes Linux Kernel and other supporting softwares which are required for user management, system management , file operations etc.
 
-Kernels are generally classified as Monotlithic Microkernel or Hybrid Kernel
+Kernels are generally classified as Monolithic Micro kernel or Hybrid Kernel
 
 Linux has a Monolithic Kernel
 
@@ -105,14 +105,14 @@ Even in Azure DataCenter, Microsoft is using Linux OS to run most of the service
 
 Linux is the base for Android Operating System
 
-Linux is the base for iOS Operating Syste,
+Linux is the base for iOS Operating System,
 
 You will find Linux in TV, Smart Phones, Remote, Setup Box, Watches, Router and list goes on  and on  and on…..
 
 
 #### What is a shell?
 
-In Linux, a shell is a command intepreter: a program that has the permission and ability to run other programs. On Linux it is possible to run many sessions, or instances, of a shell simultaneously.
+In Linux, a shell is a command interpreter: a program that has the permission and ability to run other programs. On Linux it is possible to run many sessions, or instances, of a shell simultaneously.
 
 #### What is bash?
 
@@ -133,4 +133,4 @@ At first we'll look at terminals, but we'll quickly move into scripts too. You'l
 
 Throughout this course you'll be learning keyboard shortcuts and the command-line method for doing things. It is my strong opinion that this more effectively grounds you in the fundamentals of how things work. In practice you'll be exposed to GUI's and other tools. Mostly these are used when the volume of information we have to interpret is too large for us to manage it efficiently on the command-line. However, if you can't do it on the command-line then a gui won't help you. GUI's make working with large volumes of data more convenient, but the fundamental knowledge has to be there for you to understand what the GUI is doing. Therefore, learn the keyboard shortcuts we present and use them.
 
-The skills you'll learn here are at the core of DevOps. Your tutor initially learnt a lot of this 30 years ago, and still uses these skills on a daily basis. We will cover basic bash here, but we'll be using it in every other part of this course. We layer technical skills on top of each other, so don't think of this as a basic module, but rather as a foundational module.
+The skills you'll learn here are at the core of DevOps. Your tutor initially learn a lot of this 30 years ago, and still uses these skills on a daily basis. We will cover basic bash here, but we'll be using it in every other part of this course. We layer technical skills on top of each other, so don't think of this as a basic module, but rather as a foundational module.

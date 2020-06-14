@@ -1,6 +1,8 @@
-#numeric and String Compariso##numeric and String Comparisons
+#numeric and String Comparison
 
-We are going to discuss numbereric and string comparisons. With numeric and string comparisons, we can compare strings, words, and numbers whether raw or as variables. Following table list comparison operators for both numbers and strings.
+##numeric and String Comparisons
+
+We are going to discuss numeric and string comparisons. With numeric and string comparisons, we can compare strings, words, and numbers whether raw or as variables. Following table list comparison operators for both numbers and strings.
 
 	
 

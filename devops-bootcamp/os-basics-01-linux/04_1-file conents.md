@@ -91,7 +91,7 @@ man sed can give you more info about various options.
 
 ### Difference among files
 
-diff command shows the difference between two files by comparing files line by line. diff uses certain special intrductions/sybols to communicate required changes to make two files identical. It tells what all changes to be made in first file to make it match second file. 
+diff command shows the difference between two files by comparing files line by line. diff uses certain special symbols to communicate required changes to make two files identical. It tells what all changes to be made in first file to make it match second file. 
 
 a : add
 
@@ -109,11 +109,11 @@ press i to go into insert mode.
 
 Add following text
 
-USA
+`USA`{{execute}}
 
-UK
+`UK`{{execute}}
 
-Netherlands
+`Netherlands`{{execute}}
 
 then press Esc key ,then type :wq then enter
 
@@ -125,11 +125,11 @@ press i to go into insert mode.
 
 Add following text
 
-UK
+`UK`{{execute}}
 
-Netherlands
+`Netherlands`{{execute}}
 
-Singapore
+`Singapore`{{execute}}
 
 then press Esc key ,then type :wq then enter
 
@@ -145,13 +145,13 @@ Now let's see if we can see the content of the file before we change it
 
 It will show the 
 
-1d0
-< USA
-3a3
-> Singapore
+`1d0`
+`< USA`
+`3a3`
+`> Singapore`
 
-1d0  - says that from country1.txt delete USA
-3a3  - says to add Singapore in line 3 of country1.txt as is the case in country2.txt
+`1d0  - says that from country1.txt delete USA`
+`3a3  - says to add Singapore in line 3 of country1.txt as is the case in country2.txt`
 
 
 ### Here Document
@@ -168,15 +168,15 @@ Let's first create a bash file
 `vi heredoc.sh`{{execute}}
 
 
-#!/bin/bash
+`#!/bin/bash`{{execute}}
 
-cat <<DEMO
+`cat <<DEMO`{{execute}}
 
-This block of the text is
+`This block of the text is`{{execute}}
 
-added using Here Document example
+`added using Here Document example`{{execute}}
 
-DEMO
+`DEMO`{{execute}}
 
 save this file by pressing esc , :wq , enter key
 

@@ -2,7 +2,7 @@
 
 ## System and Networking
 
-### List of open fileslsof
+### List of open files lsof
 
 lsof commands gives us the list of all open files at that moment.
 
@@ -21,7 +21,7 @@ ip address shows list of ip addresses associated with  all network devices
 
 `ip address`{{execute}}
 
-ip link shows the link layer information. It will get the characterstis of the available link layer devices.
+ip link shows the link layer information. It will get the characteristics of the available link layer devices.
 
 `ip link`{{execute}}
 
@@ -35,7 +35,7 @@ it will return a record (IP Address)
 
 ### Process Status
 
-As linux allow multiple users and multitasking systems. so it allows multiple processes to operate without interfering with each other.
+As Linux allow multiple users and multitasking systems. so it allows multiple processes to operate without interfering with each other.
 PS command gives information of currently running processes and their PIDs. 
 
 `ps`{{execute}}
@@ -57,7 +57,7 @@ to see all the running processes other then terminal one
 
 ### Super User Do 
 
-sudo command is added infront of the some command as those commands can be run by super user only. sudo gives elevated privileges which allow users to run certain command as administor.
+sudo command is added in front of the some command as those commands can be run by super user only. sudo gives elevated privileges which allow users to run certain command as administrator.
 
 This command should be used cautiously.
 
@@ -75,14 +75,14 @@ There are many options available with this command. use man sudo to get more inf
 
 ### curl
 
-curl command is used to transfer data to and from a server using any of the supportted protocol such as http, ftp, telnet etc. This tool is quite useful in downloading multiple files or libraries or binaries as per need which is required in various places in devops.
+curl command is used to transfer data to and from a server using any of the supported protocol such as http, ftp, telnet etc. This tool is quite useful in downloading multiple files or libraries or binaries as per need which is required in various places in devops.
 
 when used with option -o it will save a downloaded file on local machine with the name specified as parameter
-Let's download openJDK from intenet.
+Let's download openJDK from internet.
 
 `curl -o openJDK.tar.gp https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_linux-x64_bin.tar.gz`{{execute}}
 
 
-now let's check if the flie is indeed downloaded
+now let's check if the file is indeed downloaded
 
 `ls -l`{{execute}}

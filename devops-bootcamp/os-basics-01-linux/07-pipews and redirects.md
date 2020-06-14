@@ -3,7 +3,7 @@
 ## Pipes & redirects (stdio/stderr)
 
 ### Standard output ( stdout)
-standard output is a default place for an output to go. Generally this is your terminal. The Linux operating system has a concept of “a default place for output to go”. shell is constantly monitoring the default output place. When your shell sees new output it prints on the screen so that we can read it. other wise it  echo "welcome"  would send “welcome” to that default placefor an output. 
+standard output is a default place for an output to go. Generally this is your terminal. The Linux operating system has a concept of “a default place for output to go”. shell is constantly monitoring the default output place. When your shell sees new output it prints on the screen so that we can read it. other wise it  echo "welcome"  would send “welcome” to that default place for an output. 
 
 ### Standard Input (stdin)
 
@@ -11,10 +11,14 @@ Standard input (stdin) is the default place where commands listen for more info.
 
 
 `cat `{{execute}}
+
 `welcome`{{execute}}
+
 ` welcome again`{{execute}}
+
 `How are you doing in the class?`{{execute}}
-type now [ctrl+d]
+
+type [ctrl+d]
 
 
 ### Pipe 
@@ -27,7 +31,7 @@ Let's create a sample file. In case you have any sample .txt file then it can be
 
 press i and insert some text. Example - This is a sample file. press Esc key, type :wq and press enter
 
-`cat samplefile.tx`{{execute}}
+`cat samplefile.txt`{{execute}}
 
 `cat filename | less`{{execute}} we will see out one page at a time.
 

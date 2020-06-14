@@ -31,15 +31,11 @@ Use the --since option to show logs after a specified date and time:
 
 loginctl may be used to introspect and control the state of the system
 
-	`loginctl`{{execute}}
-
+`loginctl`{{execute}}
 
 systemd-nspawn may be used to run a command or OS in a light-weight namespace container
 
 `Systemd-nspawn`{{execute}}
-
-
-
 
 
 systemd-analyze - Analyze system boot-up performance  
@@ -51,10 +47,9 @@ systemd-cgls recursively shows the contents of the selected Linux control group
 `systemd-cgls`{{execute}}
 
 
-
 systemd-cgtop shows the top control groups of the local Linux control group hierarchy, ordered by their CPU, memory, or disk I/O load
 
-Systemd-cgtop
+`Systemd-cgtop`{{execute}}
 
 
 

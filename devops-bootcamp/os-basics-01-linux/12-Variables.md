@@ -84,7 +84,7 @@ now press Esc key followed by :wq
 
 `./vardemo.sh`{{execute}}
 
-We have used a combination of variables and commands. You can see that it gives us a lot more agility. We can customise it without rewriting everything from scratch.
+We have used a combination of variables and commands. You can see that it gives us a lot more agility. We can customize it without rewriting everything from scratch.
 
 
 

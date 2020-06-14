@@ -10,11 +10,11 @@ In case command through an error then it will go to a file or on screen.
 
 `ls -l devops`{{execute}}
 
-This command will throughs an error stderr (as covered in earlier topics). This command throughs an error as file does not exist.
+This command will through an error stderr (as covered in earlier topics). This command through an error as file does not exist.
 
 We want to capture the output and error messages so that we can analyze this info and if require, take necessary action.
 
-we have read about redirct operator >.
+we have read about redirect operator >.
 
 Now let's deep deep dive a bit. 
 
@@ -94,7 +94,7 @@ Now run this commands
 
 `cat < file1.txt`{{execute}}
 
-So first `cat` command reads my keyboard input and converts them in to stdout which is immediately redirected to file1.txt. That is untill we press CTRL+D
+So first `cat` command reads my keyboard input and converts them in to stdout which is immediately redirected to file1.txt. That is until we press CTRL+D
 
 Later we cat command read input from file1.txt using `<` 
 

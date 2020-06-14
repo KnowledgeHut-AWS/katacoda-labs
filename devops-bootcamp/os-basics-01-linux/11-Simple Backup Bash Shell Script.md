@@ -2,7 +2,7 @@
 
 ## Backup Bash Shell Script
 
-Let's develope a basic back up script, a routine work which we need to do every day or quite frequently.
+Let's develop a basic back up script, a routine work which we need to do every day or quite frequently.
 
 We want to take back up of a directory including all files and sub directories. We will be using tar command for it.
 
@@ -61,7 +61,7 @@ This may give an error -
 
 `tar: Removing leading `/' from member names` 
 
-Ignore this error for timebeing.
+Ignore this error for time being.
 
 
 

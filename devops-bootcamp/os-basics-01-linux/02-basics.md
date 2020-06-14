@@ -6,7 +6,7 @@ This command can be used to display the line of text that is passed as an argume
 
 `echo "Welcome to DevOps Bootcamp !!"`{{execute}}
 
-There are many options with alomost all commands. You do not need to remember these options. You can refer to manual or online help using `man ` command. We will talk about this command shortly.
+There are many options with almost all commands. You do not need to remember these options. You can refer to manual or online help using `man ` command. We will talk about this command shortly.
 
 `man echo`{{execute}}
  
@@ -19,7 +19,7 @@ This command can be used to show present working directory. pwd stands for prese
  
 #### cd
 
-This command can be used to change direcotory.
+This command can be used to change a directory.
 
 `cd \etc`{{execute}}
 
@@ -48,7 +48,7 @@ Assuming you have a list of files, and you wish to know the number of lines/wor
 `ls *upload* | xargs wc`
 
 
-Xarags also allows you to find and recursively remove a directory, for example the following command will recursively remove DomTerm in the directory Downloads.
+Xargs also allows you to find and recursively remove a directory, for example the following command will recursively remove DomTerm in the directory Downloads.
 
 
 `find Downloads -name "DomTerm" -type d -print0 | xargs -0 /bin/rm -v -rf "{}" `

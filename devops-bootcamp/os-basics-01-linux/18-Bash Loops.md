@@ -11,7 +11,7 @@ For Loop
 
 While Loop
 
-Untill Loop
+Until Loop
 
 ### For Loop
 
@@ -27,14 +27,14 @@ press 'i'
 
 `for i in a b c d ; do`{{execute}}
 
-`    echo $i`
+`    echo $i`{{execute}}
 
 `done`{{execute}}
 
 
-There are frou reseve words in foor loop for, in, do, done. 
+There are four reserve words in for loop for, in, do, done. 
 
-For each item  in list a, b, c, and d assign each item into a variable i. Once assigned then do echo $1. This will print hte variable.
+For each item  in list a, b, c, and d assign each item into a variable i. Once assigned then do echo $1. This will print the variable.
 
 
 ### While Loop
@@ -57,16 +57,16 @@ press 'i'
 
 `done`{{execute}}
 
-In this loop, we have intialized a counter  and we want to print only even number so it start counter value with zero and with every run it increments the counter with value 2. Untile $counter values becomes greater than 10 , it will keep on printing the even numbers.
+In this loop, we have initialized a counter  and we want to print only even number so it start counter value with zero and with every run it increments the counter with value 2. Until $counter values becomes greater than 10 , it will keep on printing the even numbers.
 
 so output is 2, 4, 6, 8, 10
 
-Once conditions becomes fales loop execution stops.
+Once conditions becomes false loop execution stops.
 
-### Untill Loop
+### Until Loop
 
 
-Next loop is Untill loop. This loop acts like whileloop but it code is executed only when condition remains false. The momemnt condition becomes true loop stops excuting.
+Next loop is Until loop. This loop acts like while loop but it code is executed only when condition remains false. The moment condition becomes true loop stops executing.
 
 Here is the example.
 
