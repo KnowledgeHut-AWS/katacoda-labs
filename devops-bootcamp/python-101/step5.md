@@ -59,8 +59,8 @@ Add a unit test to the tests directory `my_example_project/tests/test_calculator
 
 <pre class="file" data-filename="my_example_project/tests/test_calculator.py" data-target="replace">
 import unittest
- from example_pkg_kh.calculator import Calculator
-class TestCalculator(unittest.TestCase):
+from example_pkg_kh.calculator import Calculator
+class TestCalculator(unittest.TestCase):
     def test_returns_0_for_empty_arguments(self):
         calc = Calculator()
         self.assertEqual(0, calc.sum())
@@ -91,6 +91,7 @@ The final directory strcuture would look like this
 
 ```bash
 my_python_project
+├── LICENSE
 ├── README.md
 ├── example_pkg_kh
 │   ├── __init__.py
