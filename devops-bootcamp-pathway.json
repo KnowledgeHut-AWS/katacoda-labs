@@ -11,6 +11,11 @@
       "course_id": "python-101",
       "title": "Python 101",
       "description": "Python 101"
+    },
+    {
+      "course_id": "Anaconda",
+      "title": "Ananconda",
+      "description": "Using Ananconda Platform"
     }
   ]
 }

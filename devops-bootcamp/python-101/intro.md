@@ -13,7 +13,7 @@ if right_this_minute in odds:
     print("This minute seems a tad bit odd!")
 else:
     print("I'm all good lads!")
-```
+```{{copy}}
 
 Run the file with following command
 

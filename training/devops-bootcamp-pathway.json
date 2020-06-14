@@ -8,6 +8,20 @@
       "course_id": "os-basics-01-linux",
       "title": "Operating System Basics 01 Linux",
       "description": "A 1-day course on Bash"
-    }
+    },
+    {
+      "pathway_id": "knowledgehut/python-101",
+      "id": "python-101",
+      "course_id": "python-101",
+      "title": "Python 101",
+      "description": "A 1-day course on Python"
+    },
+    {
+      "pathway_id": "knowledgehut/anaconda-101",
+      "id": "anacoda-101",
+      "course_id": "anaconda-101",
+      "title": "Aanaconda Python",
+      "description": "Anaconda Python Distribution"
+    }    
   ]
 }
