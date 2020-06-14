@@ -23,7 +23,7 @@ Start the python shell
 import module and run `fibonacci` method
 
 `import kh_module`{{execute}}
-`kh_module.fibbonaci(20)`{{execute}}
+`kh_module.fibonacci(20)`{{execute}}
 
 Notice the output. Modules such as this typically serve the purpose as a library that is included in a program or other modules.
 

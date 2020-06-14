@@ -12,4 +12,4 @@ if __name__ == "__main__":
 1. We've created a main method which calls the fibbonaci serires function
 2. You can see that `import` is a scoped statements which means you can import for the entire module or import for particular method
 
-To run this module now simply run `python kh_module.py`{{execute}}
+You can now run this module for the command line `python kh_module.py 20`{{execute}}

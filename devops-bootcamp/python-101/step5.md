@@ -2,16 +2,13 @@
 
 **Note** You may delete all files created in previous stesp via `rm -rf *.py` for cleagnin up editor widnow before doing these steps ***optional step***
 
-Make a directory `my_example_project`
+Make a directory `my_example_project`{{execute}}
 
-`mkdir my_example_project`{{execute}}
-`cd my_example_project`{{execute}}
-
-Create the `setup.py`{{open}} file; this file defines all the build information for the module.
+Create the `my_example_project/setup.py`{{open}} file; this file defines all the build information for the module.
 
 Add following code to the setup file
 
-<pre class="file" data-filename="setup.py" data-target="replace">
+<pre class="file" data-filename="my_example_project/setup.py" data-target="replace">
 import setuptools
 
 with open("README.md", "r") as fh:
@@ -36,17 +33,17 @@ setuptools.setup(
 )
 </pre>
 
-Add simple `README.md`{{open}} file, add following makrdown code to this file
+Add simple `my_example_project/README.md`{{open}} file, add following makrdown code to this file
 
-<pre class="file" data-filename="README.md" data-target="replace">
+<pre class="file" data-filename="my_example_project/README.md" data-target="replace">
 # Example Package
 
 This is a simple example package. You can use [Github-flavored Markdown](https://guides.github.com/features mastering-markdown/) to write your content.
 </pre>
 
-Add a `LICENSE`{{open}} file
+Add a `my_example_project/LICENSE`{{open}} file
 
-<pre class="file" data-filename="LICENSE" data-target="replace">
+<pre class="file" data-filename="my_example_project/LICENSE" data-target="replace">
 Copyright (c) 2020 The Python Packaging Authority Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </pre>
 
@@ -58,13 +55,9 @@ Add tests source folder
 
 `mkdir tests`{{execute}}
 
-Change to the Test directory and add a unit test
+Add a unit test to the tests directory `my_example_project/tests/test_calculator.py`{{open}}
 
-`cd tests`{{execute}}
-
-Add a unit test `test_calculator.py`{{open}}
-
-<pre class="file" data-filename="test_calculator.py" data-target="replace">
+<pre class="file" data-filename="my_example_project/tests/test_calculator.py" data-target="replace">
 import unittest
  from example_pkg_kh.calculator import Calculator
 class TestCalculator(unittest.TestCase):
@@ -78,19 +71,13 @@ import unittest
 
 We need to add an `__init__.py` file to this directory
 
-`touch __init__.py`{{execute}}
+`touch my_example_project/tests/__init__.py`{{execute}}
 
 ***Note***: The `__init__.py` files are required to make Python treat the directories as containing packages; this is done to prevent directories with a common name, such as string, from unintentionally hiding valid modules that occur later on the module search path.
 
-Go to the `example_pkg` directory and add `calculator.py` file as follows
+Add a simple calculator with a sum method `my_example_project/example_pkg_kh/calculator.py`{{open}}
 
-`cd ..`{{execute}}
-
-`cd example_pkg_kh`{{execute}}
-
-Add a simple calculator with a sum method `calculator.py`{{open}}
-
-<pre class="file" data-filename="calculator.py" data-target="replace">
+<pre class="file" data-filename="my_example_project/example_pkg_kh/calculator.py" data-target="replace">
 class Calculator:
     def sum(self, a = 0, b = 0):
         return (a + b)
@@ -98,7 +85,7 @@ class Calculator:
 
 We also need to create the `__init__.py` file
 
-`touch __init__.py`{{execute}}
+`touch my_example_project/example_pkg_kh/__init__.py`{{execute}}
 
 The final directory strcuture would look like this
 
@@ -116,8 +103,7 @@ my_python_project
 
 Run the unit tests from `my_example_project` directory
 
-`cd ..`{{execute}}
-
+`cd my_example_project`{{execute}}
 `python -m unittest discover -v`{{execute}}
 
 Our code is now ready to be released as a package
