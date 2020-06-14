@@ -1,19 +1,3 @@
-# Conda
+# Working with the Anaconda distribution
 
-Conda is an open-source package management system and environment management system that runs on Windows, macOS, and Linux. Conda quickly installs, runs, and updates packages and their dependencies. Conda easily creates, saves, loads, and switches between environments on your local computer. It was created for Python programs but it can package and distribute software for any language.
-
-## Common Conda commands
-
-Conda works on the concept of **environments**, which are basically different versions of python or packages combinations
-
-Creating an enviornment
-
-### Using conda packages
-
-Search for packages
-
-```bash
-conda search scipy
-```
-
-Installing a package
+In this exercise we will learn how to install and use anaconda distrbution, and create data visualisations in Anaconda
