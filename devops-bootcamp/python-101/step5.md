@@ -59,6 +59,7 @@ Add a unit test to the tests directory `my_example_project/tests/test_calculator
 
 <pre class="file" data-filename="my_example_project/tests/test_calculator.py" data-target="replace">
 import unittest
+<<<<<<< HEAD
 
 from example_pkg_kh.calculator import Calculator
 
@@ -98,6 +99,7 @@ The final directory strcuture would look like this
 
 ```bash
 my_python_project
+├── LICENSE
 ├── README.md
 ├── example_pkg_kh
 │   ├── __init__.py
