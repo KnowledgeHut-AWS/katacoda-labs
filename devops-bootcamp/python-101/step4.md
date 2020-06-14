@@ -4,9 +4,9 @@
 
 Create file `person.py`
 
-`touch person.py`{{execute}} 
+`touch person.py`{{execute}}
 
-Add the following code
+Open the file `person.py`{{open}} and add the following code
 
 <pre class="file" data-filename="person.py" data-target="replace">
 class Person:

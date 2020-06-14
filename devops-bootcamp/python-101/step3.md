@@ -1,4 +1,4 @@
-# Exectuable Modules
+# Adding main method to make an executable module
 
 To create an 'executable' module, i.e. modules that can run from the command line with python interpreter we need to make some changes. Open the `kh_module.py`{{open}} and add following code to the end of file
 

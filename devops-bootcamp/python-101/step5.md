@@ -1,4 +1,6 @@
-# Building Python Module
+# Building a module distribution
+
+**Note** You may delete all files created in previous stesp via `rm -rf *.py` for cleagnin up editor widnow before doing these steps ***optional step***
 
 Make a directory `my_example_project`
 
@@ -8,6 +10,7 @@ Make a directory `my_example_project`
 Create the `setup.py` file,
 
 `touch setup.py`{{execute}}
+`setup.py`{{open}}
 
 Add following code to the setup file
 
@@ -39,6 +42,7 @@ setuptools.setup(
 Add simple `README.md` file
 
 `touch README.md`{{execute}}
+`README.md`{{open}}
 
 Add following makrdown code to this file
 
@@ -51,6 +55,7 @@ This is a simple example package. You can use [Github-flavored Markdown](https:/
 Add a license file
 
 `touch LICENSE`{{execute}}
+`LICENSE`{{open}}
 
 <pre class="file" data-filename="LICENSE" data-target="replace">
 Copyright (c) 2020 The Python Packaging Authority Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
@@ -68,23 +73,26 @@ Change to the Test directory and add a unit test
 
 `cd tests`{{execute}}
 
-Add the following unit tests
+Add a unit test
+
+`touch test_calculaotr.py`{{execute}}
+`test_calculator.py`{{open}}
 
 <pre class="file" data-filename="test_calculator.py" data-target="replace">
 import unittest
-from example_pkg_kh.calculator import Calculator
+ from example_pkg_kh.calculator import Calculator
 class TestCalculator(unittest.TestCase):
     def test_returns_0_for_empty_arguments(self):
         calc = Calculator()
         self.assertEqual(0, calc.sum())
-    def test_returns_sum(self):
+    def test_returns_sum(self):
         calc = Calculator()
         self.assertEqual(3, calc.sum(1, 2))
 </pre>
 
 We need to add an `__init__.py` file to this directory
 
-touch `__init__.py`{{execute}}
+`touch __init__.py`{{execute}}
 
 ***Note***: The `__init__.py` files are required to make Python treat the directories as containing packages; this is done to prevent directories with a common name, such as string, from unintentionally hiding valid modules that occur later on the module search path.
 
@@ -95,10 +103,11 @@ Go to the `example_pkg` directory and add `calculator.py` file as follows
 `cd example_pkg_kh`{{execute}}
 
 `touch calculator.py`{{execute}}
+`calculator.py`{{open}}
 
 <pre class="file" data-filename="calculator.py" data-target="replace">
 class Calculator:
-    def sum(self, a = 0, b = 0):
+    def sum(self, a = 0, b = 0):
         return (a + b)
 </pre>
 

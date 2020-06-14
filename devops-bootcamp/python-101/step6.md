@@ -1,4 +1,4 @@
-# Common PIP commands
+# Working with pip
 
 When you install pip, a pip command is added to your system, which can be run from the command prompt as follows:
 
@@ -23,9 +23,9 @@ Installing from a requirements file
 A `requirements.txt` defines all modules to be installed, usually as a dependency to a given project.
 
 `touch requirements.txt`{{execute}}
+`requirements.txt`{{open}}
 
 <pre class="file" data-filename="requirements.txt" data-target="replace">
-sphinx
 more-itertools
 pyyaml
 mock
@@ -40,9 +40,9 @@ While `requirements.txt` lists ala dependencies, the `constaints.txt` file, only
 
 `pip install -c constraints.txt`
 
-“Wheel” is a built, archive format that can greatly speed installation compared to building and installing from source archives. `pip` prefers Wheels where they are available. To install from a wheel
+“Wheel” is a built, archive format that can greatly speed installation compared to building and installing from source archives. `pip` prefers Wheels where they are available. To install from a wheel type to the location of `.whl` file `example_pkg_kh/dist` directory for example:
 
-`pip install my_example_project/dist/example_pkg_kh-0.0.1-py3-none-any.whl`{{execute}}
+`pip install my_example_project/dist/example_pkg_kh-anadi-0.0.1-py3-none-any.whl`
 
 For the cases where wheels are not available, pip offers pip wheel as a convenience, to build wheels for all your requirements and dependencies.
 
@@ -57,7 +57,9 @@ to install those requirements just using your local directory of wheels
 
 To uninstall a package
 
-`pip uninstall example_pkg_kh`
+`pip uninstall example_pkg_kh-anadi`
+
+**Note:** The package name would be `example_pkg_kh-[username]` for you
 
 To list installed packages
 
