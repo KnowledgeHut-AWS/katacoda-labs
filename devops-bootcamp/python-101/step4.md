@@ -2,11 +2,7 @@
 
 ## Simple python class example
 
-Create file `person.py`
-
-`touch person.py`{{execute}}
-
-Open the file `person.py`{{open}} and add the following code
+Create file `person.py`{{open}} and add the following code
 
 <pre class="file" data-filename="person.py" data-target="replace">
 class Person:

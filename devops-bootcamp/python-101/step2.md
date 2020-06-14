@@ -2,17 +2,14 @@
 
 Python modules help organise code into logical groups which can then be reused in other programs or run from the command line as shell scripts.
 
-We will create a simple python module which calculates fibbonaci series for the given number. Create file `kh_module.py`
+We will create a simple python module which calculates fibbonaci series for the given number. Create file `kh_module.py`{{open}}
 
-`touch kh_module.py`{{execute}}
-
-Opne the file `kh_mdoule.py`{{open}}
 Add following to code to the file, it is a simple method that prints the fibonacci series upto the number given as argument to the method
 
 <pre class="file" data-filename="kh_module.py" data-target="replace">
 def fibonacci(n):
     a, b = 0, 1
-    while a <pre n:
+    while a < n:
         print(a, end=' ')
         a, b = b, a+b
     print()

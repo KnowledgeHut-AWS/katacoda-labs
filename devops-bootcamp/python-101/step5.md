@@ -7,10 +7,7 @@ Make a directory `my_example_project`
 `mkdir my_example_project`{{execute}}
 `cd my_example_project`{{execute}}
 
-Create the `setup.py` file,
-
-`touch setup.py`{{execute}}
-`setup.py`{{open}}
+Create the `setup.py`{{open}} file; this file defines all the build information for the module.
 
 Add following code to the setup file
 
@@ -39,12 +36,7 @@ setuptools.setup(
 )
 </pre>
 
-Add simple `README.md` file
-
-`touch README.md`{{execute}}
-`README.md`{{open}}
-
-Add following makrdown code to this file
+Add simple `README.md`{{open}} file, add following makrdown code to this file
 
 <pre class="file" data-filename="README.md" data-target="replace">
 # Example Package
@@ -52,10 +44,7 @@ Add following makrdown code to this file
 This is a simple example package. You can use [Github-flavored Markdown](https://guides.github.com/features mastering-markdown/) to write your content.
 </pre>
 
-Add a license file
-
-`touch LICENSE`{{execute}}
-`LICENSE`{{open}}
+Add a `LICENSE`{{open}} file
 
 <pre class="file" data-filename="LICENSE" data-target="replace">
 Copyright (c) 2020 The Python Packaging Authority Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
@@ -73,10 +62,7 @@ Change to the Test directory and add a unit test
 
 `cd tests`{{execute}}
 
-Add a unit test
-
-`touch test_calculaotr.py`{{execute}}
-`test_calculator.py`{{open}}
+Add a unit test `test_calculator.py`{{open}}
 
 <pre class="file" data-filename="test_calculator.py" data-target="replace">
 import unittest
@@ -102,8 +88,7 @@ Go to the `example_pkg` directory and add `calculator.py` file as follows
 
 `cd example_pkg_kh`{{execute}}
 
-`touch calculator.py`{{execute}}
-`calculator.py`{{open}}
+Add a simple calculator with a sum method `calculator.py`{{open}}
 
 <pre class="file" data-filename="calculator.py" data-target="replace">
 class Calculator:

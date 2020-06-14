@@ -1,10 +1,6 @@
 # Writing our first python program
 
-Create python file `greeting.py`
-
-`touch greeting.py`{{execute}}
-
-Open the file `greeting.py`
+Create python file `greeting.py`{{open}}
 
 <pre class="file" data-filename="greeting.py" data-target="replace">
 from datetime import datetime
