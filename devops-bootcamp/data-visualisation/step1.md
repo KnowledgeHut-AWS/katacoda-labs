@@ -2,15 +2,35 @@
 
 We will becreating visulaisations of all Olympic gold medatlists since the start of Athen Olympics in 1896 till 2008.Open the Jupyter notebook and copy token from terminal onto the authentication field to connect.
 
+![Notebook](./assets/step1.png)
+
 ## Adding data
 
-In the Files tab click on "New" tab on top right, and choose option textfile. Click on untitled.txt and enter name `data.csv` to the dialog that opens.
+In the Files tab click on "New" tab on top right, and choose option textfile. 
 
-Download the file [Summer Olympics Data](https://docs.google.com/spreadsheets/d/1zeeZQzFoHE2j_ZrqDkVJK9eF7OH1yvg75c8S-aBcxaU/edit#gid=0) and paste all it's content to this file. Choose File > Save to save this file.
+![New File Added](./assets/step2.png)
+
+Download the file [Summer Olympics Data](https://docs.google.com/spreadsheets/d/1zeeZQzFoHE2j_ZrqDkVJK9eF7OH1yvg75c8S-aBcxaU/edit#gid=0) and paste all it's content to this file. 
+
+![Data Added](./assets/data-file.png)
+
+Click on untitled.txt and enter name `data.csv` to the dialog that opens.
+
+![Data file reanmed](./assets/renamed.png)
 
 We will use this data to  draw different visualisations for our exercise. Return to the previous tab in your browser and you'll notice a data.csv file in the Files tab. Lets add code for data visualisations
 
-Choose New > Python 3 in the files tab to create a new Python Note book. Raname the file to `olympics_data`. Lets add visulisation code now
+## Creating Notebook
+
+Choose New > Python 3 in the files tab to create a new Python Note book.
+
+![New Notebook](./assets/new-notebook.png)
+
+Raname the file to `olympics_data.ipynb`. 
+
+![Notebook Renamed](./assets/renamed-ipynb.png)
+
+Lets add visulisation code now
 
 Paste the following to the notebook and hit Run button
 
@@ -46,7 +66,7 @@ There is a kind of Plot types which are following.
 
 Now let’s take an example of one by one chart in Jupyter Notebook. Let’s plot a graph of different sports takes part in the Olympics Edition 2008. We have already imported the matplotlib.pyplot library in the Notebook, now we will use that to plot the graph of different sports.
 
-**Plot a Line Chart using Matplotlib.pyplot Library**
+### Plot a Line Chart using Matplotlib.pyplot Library
 
 We will display the line chart. So let’s add the following code in the Jupyter Notebook.
 
@@ -57,7 +77,7 @@ filteredData.Sport.value_counts().plot()
 
 ![Discpline Stats Graph](assets/graph-0.png)
 
-**Plot a Bar Chart using Matplotlib.pyplot Library**
+### Plot a Bar Chart using Matplotlib.pyplot Library
 
 We can also display the bar chart instead of the line chart. We need to pass a parameter kind and value to the bar, and it will show the bar chart. See the following example. Write the following code in the cell.
 
@@ -69,7 +89,7 @@ filteredData.Sport.value_counts().plot(kind='bar')
 
 ![Bar Chart Graph](./assets/graph-1.png)
 
-**We can also get the Horizontal plot using the following code**
+### We can also get the Horizontal plot using the following code
 
 ```python
 filteredData.Sport.value_counts().plot(kind='barh')
@@ -77,7 +97,7 @@ filteredData.Sport.value_counts().plot(kind='barh')
 
 ![Horizontal Bar Chart Graph](./assets/graph-1.png)
 
-**Plot a Pie Chart using Matplotlib.pyplot Library**
+### Plot a Pie Chart using Matplotlib.pyplot Library
 
 We can also display the pie chart instead of the bar chart. We need to pass a parameter kind and value to the pie, and it will show the bar chart. See the following example. Write the following code in the cell.
 
