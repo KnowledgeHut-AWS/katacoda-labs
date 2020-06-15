@@ -38,7 +38,7 @@ urlpatterns = [
 ]
 </pre>
 
-The next step is to point the root URLconf at the `addressbook.urls` module. In `contacts/urls.py`{{open}}, add an import for `django.urls.include` and insert an `include()` in the `urlpatterns` list, so you have:
+The next step is to point the root URLconf at the `addressbook.urls` module. In `contacts/contacts/urls.py`{{open}}, add an import for `django.urls.include` and insert an `include()` in the `urlpatterns` list, so you have:
 
 <pre class="file" data-filename="contacts/addressbook/urls.py" data-target="replace">
 from django.contrib import admin
@@ -65,7 +65,7 @@ You should always use `include()` when you include other URL patterns. `admin.si
 
 You have now wired an `index` view into the URLconf. Lets verify it’s working, run the following command if you've stopped your server:
 
-`python manage.py runserver 0:8000`
+`python3 manage.py runserver 0:8000`{{execute}}
 
 Unfortunately, we can't change the URL in the **runserver** tab, so click the button on that tab that looks like a box with an escaping arrow. This should open a new tab in your browser. Now you can change the URL so it ends with `/addressbook/` and you should see the text _“Hello, world. You’re at the addressbook index.”_, which you defined in the index view.
 

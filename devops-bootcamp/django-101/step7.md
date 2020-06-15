@@ -46,7 +46,7 @@ That small bit of model code gives Django a lot of information. With it, Django 
 
 But first we need to tell our project that the addressbook app is installed.
 
-To include the app in our project, we need to add a reference to its configuration class in the `INSTALLED_APPS` setting. The AddressbookConfig class is in the `addressbook/apps.py` file, so its dotted path is `'polls.apps.PollsConfig'`. Edit the contacts/settings.py file and add that dotted path to the `INSTALLED_APPS` setting. It’ll look like this:
+To include the app in our project, we need to add a reference to its configuration class in the `INSTALLED_APPS` setting. The AddressbookConfig class is in the `contacts/addressbook/apps.py`{{open}} file, so its dotted path is `'polls.apps.PollsConfig'`. Edit the `contacts/contacts/settings.py`{{open}} file and add that dotted path to the `INSTALLED_APPS` setting. It’ll look like this:
 
 ```python
 INSTALLED_APPS = [
@@ -62,7 +62,7 @@ INSTALLED_APPS = [
 
 Now Django knows to include the polls app. Let’s run another command:
 
-`python manage.py makemigrations addressbook`{{execute}}
+`python3 manage.py makemigrations addressbook`{{execute}}
 
 you should see similar output 
 
@@ -78,7 +78,7 @@ Migrations are how Django stores changes to your models (and thus your database 
 
 There’s a command that will run the migrations for you and manage your database schema automatically - that’s called migrate, and we’ll come to it in a moment - but first, let’s see what SQL that migration would run. The sqlmigrate command takes migration names and returns their SQL:
 
-`python manage.py sqlmigrate addressbook 0001`{{execute}}
+`python3 manage.py sqlmigrate addressbook 0001`{{execute}}
 
 You'll see output similar to this:
 
@@ -91,12 +91,15 @@ CREATE TABLE "addressbook_contact" ("id" integer NOT NULL PRIMARY KEY AUTOINCREM
 COMMIT;
 ```
 
-If you’re interested, you can also run `python manage.py check`; this checks for any problems in your project without making migrations or touching the database.
+If you’re interested, you can also run `python3 manage.py check`{{execute}}; this checks for any problems in your project without making migrations or touching the database.
 
 Now, run migrate again to create those model tables in your database:
 
+`python3 manage.py migrate`{{execute}}
+
+You should see similar output
+
 ```bash
-$ python manage.py migrate
 Operations to perform:
   Apply all migrations: addressbook, admin, auth, contenttypes, sessions
 Running migrations:
@@ -108,11 +111,10 @@ The `migrate` command takes all the migrations that haven’t been applied (Djan
 Migrations are very powerful and let you change your models over time, as you develop your project, without the need to delete your database or tables and make new ones - it specializes in upgrading your database live, without losing data. We’ll cover them in more depth in a later part of the tutorial, but for now, remember the three-step guide to making model changes:
 
 - Change your models (in `models.py`).
-- Run `python manage.py makemigrations` to create migrations for those
+- Run `python3 manage.py makemigrations` to create migrations for those
     changes
-- Run `python manage.py migrate` to apply those changes to the database.
+- Run `python3 manage.py migrate` to apply those changes to the database.
 
 The reason that there are separate commands to make and apply migrations is because you’ll commit migrations to your version control system and ship them with your app; they not only make your development easier, they’re also usable by other developers and in production.
 
 Read the `django-admin` documentation for full information on what the `manage.py` utility can do.
-

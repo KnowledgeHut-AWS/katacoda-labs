@@ -28,7 +28,7 @@ These applications are included by default as a convenience for the common case.
 
 Some of these applications make use of at least one database table, though, so we need to create the tables in the database before we can use them. To do that, run the following command:
 
-`python manage.py migrate`{{execute}}
+`python3 manage.py migrate`{{execute}}
 
 The `migrate` command looks at the `INSTALLED_APPS` setting and creates any necessary database tables according to the database settings in your `contacts/settings.py` file and the database migrations shipped with the app (we’ll cover those later). You’ll see a message for each migration it applies. If you’re interested, run the command-line client for your database and type `\dt` (PostgreSQL), `SHOW TABLES;` (MySQL), `.schema` (SQLite), or `SELECT TABLE_NAME FROM USER_TABLES;` (Oracle) to display the tables Django created.
 

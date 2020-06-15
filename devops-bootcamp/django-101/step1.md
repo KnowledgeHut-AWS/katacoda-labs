@@ -41,7 +41,9 @@ These files are:
 
 ## Running a Django server
 
-`python manage.py runserver`
+change to the contacts directory `cd contacts`{{execute}} and run Django development server by executing
+
+`python3 manage.py runserver`{{execute}}
 
 You’ll see the following output on the command line:
 
@@ -124,9 +126,9 @@ measure to keep out nefarious requests.
 Open up the `contacts/settings.py`{{open}} file in your editor. Near the top, you should see a
 setting named `ALLOWED_HOSTS`. Change it to match:
 
-```python
-ALLOWED_HOSTS = ["*"]
-```
+
+> ALLOWED_HOSTS = ['[[https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/]]']
+
 
 This will allow any and all hosts to connect to your app. In a
 production environment, you'd want to set this to your own domain(s) or

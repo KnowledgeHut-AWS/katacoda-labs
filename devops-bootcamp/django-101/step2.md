@@ -2,7 +2,7 @@
 
 Run the command
 
-`python manage.py startapp addressbook`{{execute}}, this creates the app under the root `contacts` directory with following directory strcuture
+`python3 manage.py startapp addressbook`{{execute}}, this creates the app under the root `contacts` directory with following directory strcuture
 
 ```bash
 ├── addressbook
