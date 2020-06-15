@@ -25,8 +25,8 @@
     },
     {
       "pathway_id": "knowledgehut/devops-bootcamp",
-      "id": "data-visualisations",
-      "course_id": "data-viz-101",
+      "id": "data-visualisation",
+      "course_id": "data-visualisation",
       "title": "Python Data Visualisations",
       "description": "Using pandas and matplotlib to build visualisations in Python"
     },
