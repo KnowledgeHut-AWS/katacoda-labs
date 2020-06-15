@@ -2,7 +2,9 @@
 
 ## Simple Java Script Program
 
-<pre class="file" data-filename="inhex.html" data-target="replace">
+Open file `index.html`{{open}} in the editor and add following code
+
+<pre class="file" data-filename="index.html" data-target="replace">
 <!DOCTYPE html>
 <html>
 <body>
@@ -19,7 +21,7 @@
 
 ## Building Docker Container with Web Server
 
-Create `Dockerfile`{{open}} with following contents
+We need a web server that can run JS embeded in HTML to see how it works. For this purpose create a `Dockerfile`{{open}} with following code
 
 <pre class="file" data-filename="Dockerfile" data-target="replace">
 FROM nginx:alpine
@@ -33,6 +35,8 @@ COPY . /usr/share/nginx/html
 
 ## Run Code
 
-`docker run --name nginx-html-container -d -p 80:80 knowledgehut/nginx-html-img:v1`
+`docker run --name nginx-html-container -d -p 80:80 knowledgehut/nginx-html-img:v1`{{execute}}
 
-Clock on the tab `Web-Server` to run the JavaScript code.
+Click on the tab `Web-Server` to open the web page.
+
+Click on `Click Me!` button and you'll notice that `JavaScript can change HTML content.` changes to `Hello JavaScript!`
