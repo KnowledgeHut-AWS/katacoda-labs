@@ -2,6 +2,38 @@
 
 We will becreating visulaisations of all Olympic gold medatlists since the start of Athen Olympics in 1896 till 2008.Open the Jupyter notebook and copy token from terminal onto the authentication field to connect.
 
+## Running the Notebook 
+
+`jupyter-notebook --host=0.0.0.0 --port=9999 --allow-root`{{execute}}
+
+You'll see output similar to 
+
+```bash
+root@78fe43fce333:~# jupyter-notebook --ip=0.0.0.0 --port=9999
+[I 17:51:30.700 NotebookApp] Writing notebook server cookie secret to /home/scrapbook/tutorial/.local/share/jupyter/runtime/notebook_cookie_secret
+[C 17:51:31.644 NotebookApp] Running as root is not recommended. Use --allow-root to bypass.
+root@78fe43fce333:~# jupyter-notebook --ip=0.0.0.0 --port=9999 --allow-root
+[I 17:51:42.575 NotebookApp] Serving notebooks from local directory: /home/scrapbook/tutorial
+[I 17:51:42.575 NotebookApp] The Jupyter Notebook is running at:
+[I 17:51:42.575 NotebookApp] http://(78fe43fce333 or 127.0.0.1):9999/?token=47e1cdbbc9ec8b6017854f93fbcfb453089e69424c8a6305
+[I 17:51:42.575 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 17:51:42.579 NotebookApp] No web browser found: could not locate runnable browser.
+[C 17:51:42.579 NotebookApp]
+
+    To access the notebook, open this file in a browser:
+        file:///home/scrapbook/tutorial/.local/share/jupyter/runtime/nbserver-61-open.html
+    Or copy and paste one of these URLs:
+        http://(78fe43fce333 or 127.0.0.1):9999/?token=47e1cdbbc9ec8b6017854f93fbcfb453089e69424c8a6305
+```
+
+Note down the token value in `token=47e1cdbbc9ec8b6017854f93fbcfb453089e69424c8a6305`
+
+Click on the `jupyter-notebook` tab and in the page that opens, paste this value in the password or token field.
+
+![Jupyter Login](./assets/login.png)
+
+This should take you to the notebook dashboard 
+
 ![Notebook](./assets/step1.png)
 
 ## Adding data
