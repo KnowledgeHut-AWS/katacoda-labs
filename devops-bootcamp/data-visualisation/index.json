@@ -2,16 +2,12 @@
   "title": "Data Visualisation in Python",
   "description": "Using pandas and matplotlib to build visualisations in Python",
   "difficulty": "Beginner",
-  "time": "30",
+  "time": "15",
   "details": {
     "steps": [
       {
-        "title": "Setup",
-        "text": "step1.md"
-      },
-      {
         "title": "Visualisations",
-        "text": "step2.md"
+        "text": "step1.md"
       }
     ],
     "intro": {
