@@ -13,9 +13,14 @@
       "description": "Python 101"
     },
     {
-      "course_id": "Anaconda",
+      "course_id": "anaconda-101",
       "title": "Ananconda",
       "description": "Using Ananconda Platform"
+    },
+    {
+      "course_id": "data-viz-101",
+      "title": "Data Visualisation",
+      "description": "Easy data visualisation with Python"
     }
   ]
 }
