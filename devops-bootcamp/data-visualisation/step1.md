@@ -4,7 +4,7 @@ We will becreating visulaisations of all Olympic gold medatlists since the start
 
 ## Running the Notebook 
 
-`jupyter-notebook --host=0.0.0.0 --port=9999 --allow-root`{{execute}}
+`jupyter-notebook --ip=0.0.0.0 --port=9999 --allow-root`{{execute}}
 
 You'll see output similar to 
 
