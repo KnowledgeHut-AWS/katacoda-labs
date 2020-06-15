@@ -26,6 +26,11 @@
       "course_id": "django-101",
       "title": "Learning Django",
       "description": "Building a web app with Django framework"
+    },
+    {
+      "course_id": "javascript-101",
+      "title": "Learning JavaScript",
+      "description": "Building a simple JavaScipt program"
     }
   ]
 }
