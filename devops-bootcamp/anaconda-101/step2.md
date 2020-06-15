@@ -15,26 +15,31 @@ Verify conda is installed, check version number
 Update conda to the current version
 
 `conda update conda`{{execute}}
+`clear`{{execute}}
 
 ### Using conda for packages
 
 Search for packages
 
 `conda search scipy`{{execute}}
+`clear`{{execute}}
 
 Installing a package
 
 `conda install sphinx`{{execute}}
+`clear`{{execute}}
 
 Uninstall package
 
 `conda uninstall sphinx`{{execute}}
+`clear`{{execute}}
 
 ### Using environments
 
 Create a new environment named py35, install Python 3.7
 
-`conda create --name py37 python=3.7`
+`conda create --name py37 python=3.7`{{execute}}
+`clear`{{execute}}
 
 Activate the new environment to use it
 
@@ -48,6 +53,7 @@ The active enviornments is shown with an `*`
 
 List all packages and versions installed in active environment
 
+`clear`{{execute}}
 `conda list`{{execute}}
 
 List the history of each change to the current environment
