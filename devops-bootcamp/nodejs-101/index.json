@@ -1,0 +1,40 @@
+{
+  "title": "NodeJS 101",
+  "description": "Getting started with NodeJS",
+  "difficulty": "Beginner",
+  "time": "20",
+  "details": {
+    "steps": [
+      {
+        "title": "Hello World!",
+        "text": "step1.md"
+      },
+      {
+        "title": "Hello Debug World!",
+        "text": "step2.md"
+      },
+      {
+        "title": "Building with NPMJS",
+        "text": "step3.md"
+      },
+      {
+        "title": "Node on Docker",
+        "text": "step4.md"
+      }      
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "Web-Server", "port": 3000}]    
+  },
+  "backend": {
+    "imageid": "javascript"
+  }
+}
