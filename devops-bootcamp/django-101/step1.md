@@ -123,12 +123,10 @@ we're trying to access it from a host that isn't allowed. By default,
 Django only allows requests from `localhost`. This is a good security
 measure to keep out nefarious requests.
 
-Open up the `contacts/settings.py`{{open}} file in your editor. Near the top, you should see a
+Open up the `contacts/contacts/settings.py`{{open}} file in your editor. Near the top, you should see a
 setting named `ALLOWED_HOSTS`. Change it to match:
 
-
-> ALLOWED_HOSTS = ['[[https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/]]']
-
+`ALLOWED_HOSTS = ['[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com']`
 
 This will allow any and all hosts to connect to your app. In a
 production environment, you'd want to set this to your own domain(s) or

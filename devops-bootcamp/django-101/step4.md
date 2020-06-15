@@ -14,7 +14,7 @@ or
 
 By default, all apps will be checked. You can check a subset of apps by providing a list of app labels as arguments:
 
-`django-admin check auth admin addressbook`{{execute}}
+`django-admin check auth admin addressbook`
 
 If you do not specify any app, all apps will be checked.
 
@@ -31,7 +31,7 @@ Activates some additional checks that are only relevant in a deployment setting.
 
 You can use this option in your local development environment, but since your local development settings module may not have many of your production settings, you will probably want to point the check command at a different settings module, either by setting the `DJANGO_SETTINGS_MODULE` environment variable, or by passing the `--settings` option:
 
-`django-admin check --deploy --settings=production_settings`{{execute}}
+`django-admin check --deploy --settings=production_settings`
 
 Or you could run it directly on a production or staging deployment to verify that the correct settings are in use (omitting `--settings`). You could even make it part of your integration test suite.
 
@@ -56,7 +56,7 @@ Prints the SQL that would be run without actually running it, so you can customi
 
 ### `dbshell`
 
-`django-admin dbshell`{{execute}}
+`django-admin dbshell`
 Runs the command-line client for the database engine specified in your ENGINE setting, with the connection parameters specified in your USER, PASSWORD, etc., settings.
 
 For PostgreSQL, this runs the `psql` command-line client.
