@@ -36,7 +36,15 @@
       {
         "title": "Persisting Data",
         "text": "step8.md"
-      }
+      },
+      {
+        "title": "Django Admin Console",
+        "text": "step9.md"
+      },
+      {
+        "title": "Packaging App as a module",
+        "text": "step10.md"
+      }      
     ],
     "intro": {
       "text": "intro.md"
