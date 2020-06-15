@@ -1,0 +1,56 @@
+{
+  "title": "Django 101",
+  "description": "Django 101",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Getting Started",
+        "text": "step1.md"
+      },
+      {
+        "title": "Creating a Django project",
+        "text": "step2.md"
+      },
+      {
+        "title": "Django Settings",
+        "text": "step3.md"
+      },
+      {
+        "title": "Django Administration",
+        "text": "step4.md"
+      },
+      {
+        "title": "Writing a simple view",
+        "text": "step5.md"
+      },
+      {
+        "title": "Running Migration",
+        "text": "step6.md"
+      },
+      {
+        "title": "Adding Models",
+        "text": "step7.md"
+      },
+      {
+        "title": "Persisting Data",
+        "text": "step8.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "runserver", "port": 8000}]
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

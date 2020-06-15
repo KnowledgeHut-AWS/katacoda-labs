@@ -21,6 +21,11 @@
       "course_id": "data-viz-101",
       "title": "Data Visualisation",
       "description": "Easy data visualisation with Python"
+    },
+    {
+      "course_id": "django-101",
+      "title": "Learning Django",
+      "description": "Building a web app with Django framework"
     }
   ]
 }

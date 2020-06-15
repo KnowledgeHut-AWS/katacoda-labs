@@ -29,6 +29,13 @@
       "course_id": "data-viz-101",
       "title": "Python Data Visualisations",
       "description": "Using pandas and matplotlib to build visualisations in Python"
+    },
+    {
+      "pathway_id": "knowledgehut/devops-bootcamp",
+      "id": "django-101",
+      "course_id": "django-101",
+      "title": "Learning Django",
+      "description": "Building a web app with Django framework"
     }     
   ]
 }
