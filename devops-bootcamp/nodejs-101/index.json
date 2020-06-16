@@ -20,7 +20,12 @@
       {
         "title": "Node on Docker",
         "text": "step4.md"
-      }      
+      },
+      {
+        "title": "Securing NodeJS Code",
+        "text": "step5.md"
+      },
+      {}
     ],
     "intro": {
       "text": "intro.md"
@@ -32,7 +37,24 @@
   "environment": {
     "uilayout": "editor-terminal",
     "showdashboard": true,
-    "dashboards": [{"name": "Web-Server", "port": 3000}]    
+    "dashboards": [
+      {
+        "name": "Web-Server",
+        "port": 3000
+      },
+      {
+        "name": "My Node App",
+        "port": 8080
+      },
+      {
+        "name": "My Docker Node",
+        "port": 8282
+      },
+      {
+        "name": "ExpressJS",
+        "port": 9000
+      }
+    ]
   },
   "backend": {
     "imageid": "javascript"

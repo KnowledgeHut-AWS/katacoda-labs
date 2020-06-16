@@ -56,4 +56,4 @@ knowledgehut/my-docker-node-app     latest     d64d3505b0d2    1 minute ago
 
 ## Run the image
 
-`docker run -p 3000:8080 -d knowledgehut/my-docker-node-app:v1`{{execute}}
+`docker run -p 8282:8080 -d knowledgehut/my-docker-node-app:v1`{{execute}}
