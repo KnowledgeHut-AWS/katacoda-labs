@@ -33,6 +33,8 @@ COPY . /usr/share/nginx/html
 
 `docker build -t knowledgehut/nginx-html-img:v1 .`{{execute}}
 
+Clear screen `clear`{{execute}}
+
 ## Run Code
 
 `docker run --name nginx-html-container -d -p 80:80 knowledgehut/nginx-html-img:v1`{{execute}}
