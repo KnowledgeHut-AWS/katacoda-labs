@@ -24,3 +24,5 @@ server.listen(port, hostname, () => {
 To run the code execute `node app.js`{{execute}}
 
 Click on the tab `Web-Server` next to Terminal and you shall see a web page with the Hello World message.
+
+Close the browser tab and stop the server by sending `CTRL-C` to the terminal

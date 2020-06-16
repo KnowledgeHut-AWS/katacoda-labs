@@ -4,8 +4,6 @@
 
 Make sure you are in the `my_node_app` directory
 
-`touch Dockerfile`{{execute}}
-
 Open the `my_node_app/Dockerfile`{{open}} in the editor. Here we need to add the following code 
 
 <pre class="file" data-filename="my_node_app/Dockerfile" data-target="replace">
