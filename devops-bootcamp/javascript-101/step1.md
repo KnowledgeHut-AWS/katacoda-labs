@@ -4,7 +4,7 @@
 
 Open file `index.html`{{open}} in the editor and add following code
 
-<pre class="file" data-filename="index.html" data-target="replace">
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -17,7 +17,7 @@ Open file `index.html`{{open}} in the editor and add following code
 
 </body>
 </html>
-</pre>
+```
 
 ## Building Docker Container with Web Server
 

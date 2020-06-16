@@ -31,6 +31,11 @@
       "course_id": "javascript-101",
       "title": "Learning JavaScript",
       "description": "Building a simple JavaScipt program"
-    }
+    },
+    {
+      "course_id": "nodejs-101",
+      "title": "Learning NodeJS",
+      "description": "Learning NodeJS and its various tools"
+    }    
   ]
 }
