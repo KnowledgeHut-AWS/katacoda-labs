@@ -39,9 +39,11 @@ npx: installed 10 in 2.603s
      $ DEBUG=project-yellowjacket:* npm start
 ```
 
+`clear`{{execute}}
+
 ## Updating the index view and running app
 
-Open the `project-yellowjacket/views/index.jade`{{execute}} and add following code to it
+Open the `project-yellowjacket/views/index.jade`{{open}} and add following code to it
 
 <pre class="file" data-filename="project-yellowjacket/views/index.jade" data-target="replace">
 extends layout
@@ -59,7 +61,7 @@ Create file `project-yellowjacket/.env`{{open}}, add the following configuration
 
 <pre class="file" data-filename="project-yellowjacket/.env" data-target="replace">
 NODE_ENV=development
-PORT=8626
+PORT=9000
 </pre>
 
 Install the `dotenv` package `npm install dotenv --save`{{execute}}
@@ -75,9 +77,20 @@ right below the line `var http = require('http');`
 
 This will eanble our `expressjs` application to read value for `PORT` from the `.env` file
 
-Run the app by first executing `npm install`{{execute}} to install all dependencies, followed by:
+To run the app by first executing `npm install`{{execute}} to install all dependencies, you will see and output that concludes with 
 
-`npm start`{{execute}}
+```bash
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+```
+
+`clear`{{execute}}
+
+Let's fix these securty vulnerabilities
+
+`npm audit fix`{{execute}} followed by `clear`{{execute}} to clear screen
+
+and `npm start`{{execute}} to run the application
 
 Click on the `ExpressJS` tab and it should show you the home page.
 
@@ -96,7 +109,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/scottlang', function (req, res) {
   res.send('But I am just a theif!')
-})
+});
 
 module.exports = router;
 
@@ -117,7 +130,9 @@ Where:
 - `PATH` is a path on the server.
 - `HANDLER` is the function executed when the route is matched
 
-Restart the app and visit link [/scottlang](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/scottlang) to see the new route ender a response.
+Hit `CTRL-C` on the terminal followed by `clear`{{execute}; and `npm start`{{execute}} to **restart** the app
+
+Visit link [/scottlang](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/scottlang) to see the new route's response.
 
 ## Adding a view response
 
@@ -155,4 +170,4 @@ router.get('/savepym', function (req, res) {
 module.exports = router;
 </pre>
 
-Restart the app and visit [/savepym](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/savepym)
+Restart the app and visit [/savepym](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/savepym) to see the rendered view.

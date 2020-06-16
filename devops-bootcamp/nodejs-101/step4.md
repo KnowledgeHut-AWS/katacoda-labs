@@ -43,9 +43,12 @@ Run the following command to build the Docker image. The `-t` flag lets you tag 
 
 Your image will now be listed by Docker:
 
-```bash
-docker images
+`clear`{{execute}}
+`docker images`{{execute}}
 
+You will see output similar to
+
+```bash
 # Example
 REPOSITORY                          TAG        ID              CREATED
 node                                12         1934b0b038d1    5 hours ago
@@ -54,4 +57,9 @@ knowledgehut/my-docker-node-app     latest     d64d3505b0d2    1 minute ago
 
 ## Run the image
 
+`clear`{{execute}}
 `docker run -p 8282:8080 -d knowledgehut/my-docker-node-app:v1`{{execute}}
+
+You may click on the `DokcerNodeJS` tab this time to see the new browser page load with the `Hello World` message.
+
+Hit `CTRL-C` to the terminal when done. `clear`{{execute}}

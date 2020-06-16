@@ -55,7 +55,7 @@ A link to the security report.
 
 Make sure you are in the `my_node_app` directory
 
-`$npm audit`{{execute}}
+`npm audit`{{execute}}
 
 You'll see output similar to:
 
@@ -74,3 +74,5 @@ Run the `npm audit fix` subcommand to automatically install compatible updates t
 Run the recommended commands individually to install updates to vulnerable dependencies. (Some updates may be semver-breaking changes; for more information.)
 
 ![Audit Vulnerability](./assets/audit-report-vulns-found-patches.png)
+
+`clear`{{execute}}
