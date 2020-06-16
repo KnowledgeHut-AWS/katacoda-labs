@@ -25,7 +25,10 @@
         "title": "Securing NodeJS Code",
         "text": "step5.md"
       },
-      {}
+      {
+        "title": "Express JS",
+        "text": "step6.md"
+      }
     ],
     "intro": {
       "text": "intro.md"
@@ -43,11 +46,11 @@
         "port": 3000
       },
       {
-        "name": "My Node App",
+        "name": "NodeApp",
         "port": 8080
       },
       {
-        "name": "My Docker Node",
+        "name": "DockerNodeJS",
         "port": 8282
       },
       {
