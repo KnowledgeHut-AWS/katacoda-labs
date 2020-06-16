@@ -2,13 +2,11 @@
 
 ## Register to npmjs
 
-All not node applications packaged as modules are distribbuted via the NPMJS registry. We have to create and account there to publish our modules. Run the following in terminal
+NodeJS applications can be packaged as modules and distribbuted via the NPMJS registry. We have to create and account there to publish our modules. Run the following in terminal
 
-```bash
-$ npm set init.author.name "YOUR_AUTHOR_NAME"
-$ npm set init.author.email "YOUR_EMAIL_ADDRESS"
-$ npm set init.author.url "YOUR_AUTHOR_URL"
-```
+1. `npm set init.author.name "YOUR_AUTHOR_NAME"`{{copy}}
+2. `npm set init.author.email "YOUR_EMAIL_ADDRESS"`{{copy}}
+3. `npm set init.author.url "YOUR_AUTHOR_URL"`{{copy}}
 
 Register to npmjs with `npm adduser`{{execute}}
 
@@ -71,8 +69,12 @@ Run `npm install`{{execute}}
 
 run `npm start`{{execute}}
 
-You may click on the
+You may click on the `NodeApp` tab this time to see the new browser page load with the `Hello World` message.
 
-## Building the package
+Hit `CTRL-C` to the terminal when done. `clear`{{execute}}
 
-Run `npm publish --access=public`{{execute}}
+## Publish the package (optional)
+
+Run `npm publish --access=public`{{execute}} to publish on npmjs
+
+`clear`{{execute}}
