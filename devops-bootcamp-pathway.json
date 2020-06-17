@@ -36,6 +36,11 @@
       "course_id": "nodejs-101",
       "title": "Learning NodeJS",
       "description": "Learning NodeJS and its various tools"
-    }    
+    },
+    {
+      "course_id": "gruntjs-101",
+      "title": "Learning GruntJS",
+      "description": "Learning building JS projects with GruntJS"
+    }        
   ]
 }
