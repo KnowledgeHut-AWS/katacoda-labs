@@ -57,6 +57,13 @@
       "course_id": "gruntjs-101",
       "title": "Learning GruntJS",
       "description": "Learning building JS projects with GruntJS"      
-    }      
+    },
+    {
+      "pathway_id": "knowledgehut/devops-bootcamp",
+      "id": "webpack-101",
+      "course_id": "webpack-101",
+      "title": "Learning Webpack",
+      "description": "Learning building JS projects with Webpack"      
+    }          
   ]
 }
