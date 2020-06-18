@@ -7,7 +7,7 @@ For this build we will have to:
 
 To enable the first step add the following goal to the `babelingit/package.json`{{open}} `scripts` section
 
-`"build:types": "tsc --emitDeclarationOnly",`{{copy}}
+`"build:types": "tsc --emitDeclarationOnly"`{{copy}}
 
 We'll now enable webpack congiruation for this project
 

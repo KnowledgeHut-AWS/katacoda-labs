@@ -119,3 +119,5 @@ Check the `lib` directory
 `ls -l lib`{{execute}}
 
 and you'll notice the build generated file.
+
+`cd`{{execute}}

@@ -113,7 +113,7 @@ Open the `babelingit/package.json`{{open}} file and update the scripts section t
 
 ```json
   "type-check": "tsc --noEmit",
-  "type-check:watch": "npm run type-check -- --watch",
+  "type-check:watch": "npm run type-check -- --watch"
 ```
 
 **Exercise** Where in the file should these be added?

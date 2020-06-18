@@ -9,7 +9,7 @@ Add dependencies
 
 This gives us only the babel library and predefined plugins for managing enviornments, we still need more libraries to make `babel` compile `typescript`. Run the following commands
 
-`npm install @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-typescript @babel/preset-flow babel-loader --save-dev`
+`npm install @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-typescript @babel/preset-flow babel-loader --save-dev`{{execute}}
 
 now that we have all the libraries lets configure babel
 
@@ -41,7 +41,7 @@ Do you know how to fix it?
 
 Once done fixing, add the following goal to the `scripts` section in the `babelingit/package.json`{{open}} file
 
-`"build:js": "webpack --mode=development",`{{copy}}
+`"build:js": "webpack --mode=development"`{{copy}}
 
 and the run build script `npm run build:js`{{execute}}
 
