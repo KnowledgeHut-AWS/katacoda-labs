@@ -1,7 +1,7 @@
 
 We'll add a source directory to our project `mkdir src`{{execute}}
 
-Add a `webapckit/src/index.js`{{open}} file with following code
+Add a `webpackit/src/index.js`{{open}} file with following code
 
 <pre class="file" data-filename="webpackit/src/index.js" data-target="replace">
 function component() {
