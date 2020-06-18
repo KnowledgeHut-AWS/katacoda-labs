@@ -4,7 +4,7 @@ Adding font files to proecessed by webpack works pretty similar to other assets.
 
 Update the `webpackit/webpack.config.js`{{open}} file to following code
 
-<pre class="file" data-filenmae="webpackit/webpack.config.js" data-target="replace">
+<pre class="file" data-filename="webpackit/webpack.config.js" data-target="replace">
 const path = require('path');
 
 module.exports = {

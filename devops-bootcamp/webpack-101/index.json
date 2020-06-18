@@ -40,6 +40,10 @@
       {
         "title": "HTML Plugin",
         "text": "step9.md"
+      },
+      {
+        "title": "Security",
+        "text": "step10.md"
       }
     ],
     "intro": {

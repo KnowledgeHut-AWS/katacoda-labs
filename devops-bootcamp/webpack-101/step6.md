@@ -60,7 +60,7 @@ Let's add a `CSS` file `webpackit/src/style.css`{{open}} to the project
 
 And import it to our `webpackit/src/index.js`{{open}} file
 
-<pre class="file' data-filename="webpackit/src/index.js" data-target="replace">
+<pre class="file" data-filename="webpackit/src/index.js" data-target="replace">
 import _ from 'lodash';
 import './style.css';
 
@@ -89,7 +89,7 @@ Run the build `npm run build`{{execute}} and amongst other things you'll notice
 
 Install package `npm install --save-dev file-loader`{{execute}}
 
-What will be the configuration for emaling the `file-loader` to process a `webpackit/src/icon.png` file in the project?
+What will be the configuration for enabling the `file-loader` to process a `webpackit/src/icon.png` file in the project?
 
 Updated: `webpackit/src/style.css`{{open}} code
 
@@ -100,7 +100,7 @@ Updated: `webpackit/src/style.css`{{open}} code
 }
 </pre>
 
-Updated: `webpackit/src/infex.js`{{open}} code
+Updated: `webpackit/src/index.js`{{open}} code
 
 <pre class="file" data-filename="webapckit/src/index.js" data-target="replace">
   import _ from 'lodash';
@@ -125,5 +125,7 @@ Updated: `webpackit/src/infex.js`{{open}} code
 
   document.body.appendChild(component());
 </pre>
+
+**TODO** download the image file from [https://ibb.co/QkGFNcH](https://ibb.co/QkGFNcH) and save it to your src folder
 
 **TODO** the webpack.config.js code to enable build with these changes

@@ -63,7 +63,7 @@ There are problems with managing JavaScript projects this way:
 
 run `npm install --save lodash`{{execute}}
 
-Now, lets import lodash in our script:
+Now, lets import lodash in our `webpackit/src/index.js`{{open}} script:
 
 <pre class="file" data-filename="webpackit/src/index.js" data-target="replace">
 import _ from 'lodash';
