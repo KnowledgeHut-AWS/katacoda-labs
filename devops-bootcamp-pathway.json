@@ -51,6 +51,11 @@
       "course_id": "babel-101",
       "title": "Babel 101",
       "description": "Using babel for compilation in webpack builds"
+    },
+    {
+      "course_id": "angular-101",
+      "title": "Angular 101",
+      "description": "Building Angular Apps"
     }          
   ]
 }
