@@ -84,7 +84,7 @@
       "id": "react-101",      
       "course_id": "react-101",
       "title": "React 101",
-      "description": "Building React Apps"
+      "description": "Building React Apps with Babel and Webpack"
     }                
   ]
 }
