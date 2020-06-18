@@ -69,8 +69,8 @@
       "pathway_id": "knowledgehut/devops-bootcamp",
       "id": "babel-101",
       "course_id": "babel-101",
-      "title": "Using the Babel Transpiler",
-      "description": "Using babel for transpilation in webpack builds"    
+      "title": "Babel 101",
+      "description": "Using babel for compilation in webpack builds"   
     }              
   ]
 }
