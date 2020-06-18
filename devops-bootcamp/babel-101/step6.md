@@ -33,3 +33,4 @@ Here's what the final package.json shall look like
     "webpack-cli": "^3.3.11"
   }
 }
+```
