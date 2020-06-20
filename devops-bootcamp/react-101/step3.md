@@ -4,6 +4,8 @@ To display our React form we must tell webpack to produce an HTML page. The resu
 
 `npm i html-webpack-plugin html-loader --save-dev`{{execute}}
 
+`clear`{{execute}}
+
 Update the `jarvis/src/webpack.config.js`{{open}} file
 
 <pre class="file" data-filename="jarvis/src/webpack.config.js" data-target="replace">

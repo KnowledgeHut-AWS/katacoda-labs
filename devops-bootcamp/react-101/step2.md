@@ -3,6 +3,8 @@
 
 `npm i webpack webpack-cli --save-dev`{{execute}}
 
+`clear`{{execute}}
+
 Update the `build` command in `scripts` in the `package.json` to:
 
 `"build": "webpack --mode development",`{{copy}}
@@ -15,6 +17,8 @@ That transformation is called `transpiling`. `babel-loader` is the webpack loade
 - babel preset react for compiling JSX and other stuff down to Javascript
 
 `npm i @babel/core babel-loader style-loader file-loader css-loader @babel/preset-env @babel/preset-react --save-dev`{{execute}}
+
+`clear`{{execute}}
 
 Next up let's create a React component that:
 
