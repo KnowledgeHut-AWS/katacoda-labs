@@ -40,7 +40,7 @@ Test if application is runnable
 
 Open the `ngServe` tab to see the default application page or click  
 
-[Angularly Home Page](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/)
+[Angularly Home Page](https://[[HOST_SUBDOMAIN]]-4200-[[KATACODA_HOST]].environments.katacoda.com/)
 
 This means we've got the installation right. 
 
