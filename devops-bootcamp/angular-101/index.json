@@ -26,16 +26,11 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "ngServe", "port": 4200}]    
   },
   "backend": {
-    "imageid": "ubuntu1804",
-    "showdashboard": true,
-    "dashboards": [
-      {
-        "name": "ngServe",
-        "port": 4200
-      }
-    ]
+    "imageid": "ubuntu1804"
   }
 }

@@ -1,13 +1,3 @@
-## Prerequisites
-
-Upgrade node and npm to latest versions.
-
-`apt update -y`{{execute}}
-
-`apt install nodejs -y`{{execute}}
-
-`apt install npm -y`{{execute}}
-
 ## Writing a simple Angular App
 
 ### Step 1
@@ -20,7 +10,7 @@ Install Angular CLI
 
 Create an angular project
 
-`ng new angularly`{{execute}}
+`ng new angularly --skip-git`{{execute}}
 
 Choose Yes and CSS respectively on the questions 
 
@@ -48,6 +38,10 @@ Test if application is runnable
 
 `ng serve`{{execute}}
 
-Open the `ngServe` tab to see the default application page. This means we've got the installation right.
+Open the `ngServe` tab to see the default application page or click  
 
-Exit the command. We'll now add some more agular code
+[Angularly Home Page](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/)
+
+This means we've got the installation right. 
+
+Exit the command thereafter. We'll now add some more agular code

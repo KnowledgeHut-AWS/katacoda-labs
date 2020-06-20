@@ -1,3 +1,5 @@
+## Integrate Form Component
+
 To display our React form we must tell webpack to produce an HTML page. The resulting bundle will be placed inside a `<script>` tag.
 
 `npm i html-webpack-plugin html-loader --save-dev`{{execute}}

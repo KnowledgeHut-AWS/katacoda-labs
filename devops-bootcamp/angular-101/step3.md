@@ -1,3 +1,5 @@
+## Setting up UI
+
 We'll set up Angular Material in our project and build our application UI using Material components.
 
 Go to your terminal and run this command from the root of your project:

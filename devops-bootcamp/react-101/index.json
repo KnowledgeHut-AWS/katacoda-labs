@@ -26,10 +26,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
-  },
-  "backend": {
-    "imageid": "ubuntu1804",
+    "uilayout": "editor-terminal",
     "showdashboard": true,
     "dashboards": [
       {
@@ -37,5 +34,8 @@
         "port": 3000
       }
     ]    
+  },
+  "backend": {
+    "imageid": "ubuntu1804"    
   }
 }
