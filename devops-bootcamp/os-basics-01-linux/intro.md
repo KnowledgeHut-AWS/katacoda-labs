@@ -1,5 +1,5 @@
-# Operating System Basics 1
-
+# Operating System Basics - Linux
+# Beta
 ## The things you will use every day
 ---
 
