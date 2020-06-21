@@ -55,7 +55,7 @@ but basically, it searches it's input for a match to a regular expression or a s
 history | grep cat
 ```{{execute}}
 
-You can use the ! with the prefix of a command to recall that line too. You would use `!cat`{{execute}} to search back
+You can use the `!` (exclamation mark) with the prefix of a command to recall that line too. You would use `!cat`{{execute}} to search back
 to the previous `cat` command, but there's an easier way to do that: 'Reverse Search'. We usually do a reverse search on 
 the history by typing `ctrl-r` and the stem of the thing we're searching for.  Try this now, type `ctrl-r` and then 
 type `echo`. You'll see the echo command comes straight back onto the command line. We can execute this by pressing enter 
@@ -70,6 +70,35 @@ either by hitting enter.
 We can also use the up and down arrow key to navigate from the end of the history backwards in execution order. We typically 
 use the arrow key if the command we are searching for is recent (within, around, the last 5 commands). If its further back 
 than this then we would use the reverse search technique instead.
+
+You can use `!` by itself to execute the previous command, and `!!` expands as the last command:
+
+Start with a command
+
+```
+ls /
+```{{execute}} 
+
+The use `!!` to run it with sudo
+
+```
+sudo !!
+```{{execute}} 
+
+This may not work so well in katacoda, so try something like this in your ubuntu terminals instead:
+
+```
+cat /etc/sudoers
+```{{copy}} 
+
+You can't view that file unless you're root, so try this:
+
+```
+sudo !!
+```{{copy}} 
+
+When you hit enter, you should get a new command line with the previous command exanded into it, but we put sudo before it, 
+so...
 
 Get used to this, you are not expected to type the same command twice. It is usually slow and error prone. It is always 
 better to pull a previous command from history.

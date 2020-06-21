@@ -28,6 +28,10 @@
       {
         "title": "Files",
         "text": "06-files.md"
+      },
+      {
+        "title": "Scripts",
+        "text": "07-scripts.md"
       }
     ],
     "intro": {
