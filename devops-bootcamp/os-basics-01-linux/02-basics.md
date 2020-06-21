@@ -8,7 +8,7 @@ If your instructor is shouting 'clear' at you, then hit ctrl-l and you'll be saf
 of insults :D.
 
 If your terminal is in a total mess, and the clear command isn't working and everything is rapidly falling down the White
-Rabbit's hole, then you should issue the ```reset```{{execute}} command to return your terminal to its pristine state.
+Rabbit's hole, then you should issue the `reset`{{execute}} command to return your terminal to its pristine state.
 
 ## Stopping things quickly
 
@@ -19,11 +19,11 @@ now. The process we'll try with is `top`{{execute}} (it views system resources).
 of looking at all the wonderful data it displays, kill it by typing `ctrl-c`.
 
 To exit a terminal (or other command with a prompt) you should type `ctrl-d`, which is the same as typing `exit`. If you 
-want to try this, first let's start another shell inside this one. Type ```bash```{{execute}} (yes, it's that easy) to start
-another bash shell. You can check this out with ```ls -gAlFh```{{execute}} which should show you a formatted list of 
+want to try this, first let's start another shell inside this one. Type `bash`{{execute}} (yes, it's that easy) to start
+another bash shell. You can check this out with `ls -gAlFh`{{execute}} which should show you a formatted list of 
 the contents of your home directory. If you want to exit that command prompt, kill that shell session, and return to its 
-parent, you can type ```exit```{{execute}}. If you do that, open another session (```bash```{{execute}}), do something
-again -- ```cat ~/.bashrc```{{execute}}, then exit the session with `ctrl-d`. If you're vigilent, you'll notice the word
+parent, you can type `exit`{{execute}}. If you do that, open another session (`bash`{{execute}}), do something
+again -- `cat ~/.bashrc`{{execute}}, then exit the session with `ctrl-d`. If you're vigilent, you'll notice the word
 `exit` flashing up at the bottom of the terminal as you exit. `ctrl-d` just inserts the word exit.
 
 ## Escalating privileges
@@ -60,12 +60,26 @@ You can list multiple packages to install with either tool. Ultimately they all 
 used in scripts so it doesn't default to a human centric view of the world and therefore doesn't need permissions to install
 something. Ubuntu is rather behind from this perspective.
 
+## Can you give me more background?
+Commands (or 'jobs') jcan be run in the foreground or background. Sometimes it is useful to switch between the two. To run 
+a command in the background just put an `&` (ampersand) at the end of the command. This can get messy if the command has 
+lots of output so be careful with this command. An example would be `ping google.com &`{{execute}}. If you hit enter on that
+you'll be sent back to the comand prompt, but the output keeps coming. (`ping` uses an internet management protocol to confirm
+if a server is responsive or not -- it is the most basic way to check that we 'reach' a server).
+
+To bring a bacground job to the foreground you can issue the `fg`{{execute}} command. This will bring job #1 to the foreground, 
+but if you use the command `jobs`{{execute}} to list all background jobs you can put the job number after `fg` to bring a
+specific job to the foreground instead. 
+
+This technique is less useful in environments where we can open many terminal windows, but we do use it often in automation
+scripting and to run many independant tasks in parallel.
+
 ## I'm getting tired
 If you get bored of typing a command, btw, you can create an alias to it and make it easier. An alias is just a shorhand
 way of referring to a command. You'll have seen your instructor doing this in class quite often like this:
 
 ```
-alias ll='ls -gAlFh'
+alias ll='ls -gAGFh'
 ll
 ```{{execute}}
 

@@ -56,7 +56,7 @@ but basically, it searches it's input for a match to a regular expression or a s
 history | grep cat
 ```{{execute}}
 
-You can use the ! with the prefix of a command to recall that line too. You would use ```!cat```{{execute}} to search back
+You can use the ! with the prefix of a command to recall that line too. You would use `!cat`{{execute}} to search back
 to the previous `cat` command, but there's an easier way to do that: 'Reverse Search'. We usually do a reverse search on 
 the history by typing `ctrl-r` and the stem of the thing we're searching for.  Try this now, type `ctrl-r` and then 
 type `echo`. You'll see the echo command comes straight back onto the command line. We can execute this by pressing enter 
@@ -110,14 +110,14 @@ or you can type ctrl-l (which is easier and quicker; and won't get you shouted a
 To stop a running command you can usually type `ctrl-c`. Because this is 'paste' in most systems (including linux) the 
 paste is often remapped to either `shift-ins` (insert), or `ctrl-shift-v` (which I prefer). If you are on a macbook with 
 linux installed you're still going to have problems. You won't buy one of them again will you? Let's try ending a process
-now. The process we'll try with is ```top```{{execute}} (it views system resources). It runs forever, so when you get bored
+now. The process we'll try with is `top`{{execute}} (it views system resources). It runs forever, so when you get bored
 of looking at all the wonderful data it displays, kill it by typing `ctrl-c`.
 
 To exit a terminal (or other command with a prompt) you should type `ctrl-d`, which is the same as typing `exit`. If you 
-want to try this, first let's start another shell inside this one. Type ```bash```{{execute}} (yes, it's that easy) to start
-another bash shell. You can check this out with ```ls -gAlFh```{{execute}} which should show you a formatted list of 
+want to try this, first let's start another shell inside this one. Type `bash`{{execute}} (yes, it's that easy) to start
+another bash shell. You can check this out with `ls -gAlFh`{{execute}} which should show you a formatted list of 
 the contents of your home directory. If you want to exit that command prompt, kill that shell session, and return to its 
-parent, you can type ```exit```{{execute}}. If you do that, open another session (```bash```{{execute}}), do something
-again -- ```cat ~/.bashrc```{{execute}}, then exit the session with `ctrl-d`. If you're vigilent, you'll notice the word
+parent, you can type `exit`{{execute}}. If you do that, open another session (`bash`{{execute}}), do something
+again -- `cat ~/.bashrc`{{execute}}, then exit the session with `ctrl-d`. If you're vigilent, you'll notice the word
 `exit` flashing up at the bottom of the terminal as you exit. `ctrl-d` just inserts the word exit.
 

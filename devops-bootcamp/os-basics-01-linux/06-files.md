@@ -132,7 +132,7 @@ file, `*.java` in the first eample.
 ```
 touch one/two/three/four/five/six/myjavafile.java
 find . -name *.java
-```{{execute}}}
+```{{execute}}
 
 But, this can get confusing if you happen to have files and directories with the same names and you have a large search space,
 so we can search by file type too. This is also useful if, for example, you want to find all the executable files. In the
@@ -141,7 +141,7 @@ first example we will find only files
 ```
 touch one/two/three/four/five/one
 find . -name one
-```{{execute}}}
+```{{execute}}
 This creates a file called on in the directory called five. I know that's confusing, but so is linux file-handling so you
 better hang on to your hats because its going to get curiouser in a couple of moments. Then it searches for files named one.
 It finds both the directory and the file, but if we want to find just the file we can constrain the search to only find
@@ -150,14 +150,14 @@ files, rather than directories
 ```
 touch one/two/three/four/five/one
 find . -type f -name one
-```{{execute}}}
+```{{execute}}
 
 Or, just the directory
 
 ```
 touch one/two/three/four/five/one
 find . -type d -name one
-```{{execute}}}
+```{{execute}}
 
 ## X-Ray vision
 We can go deeper though, we can find files with only specific content using a tool called `grep`. This name comes from

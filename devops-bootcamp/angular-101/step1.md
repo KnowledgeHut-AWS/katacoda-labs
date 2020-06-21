@@ -1,12 +1,12 @@
-## Writing a simple Angular App
+# Writing a simple Angular App
 
-### Step 1
+## Part 1
 
 Install Angular CLI
 
 `npm install -g @angular/cli`{{execute}}
 
-### Step 2
+## Part 2
 
 Create an angular project
 
@@ -32,7 +32,7 @@ You'll notice that other than `package.json` and `tsconfig.json` we have lot mor
 - `tsconfig.app.json` is the application configuration for this project
 - `angular.json` provides workspace-wide and project-specific configuration defaults for build and development tools provided by the Angular CLI. Path values given in the configuration are relative to the root workspace folder.
 
-### Step 3
+## Part 3
 
 Test if application is runnable
 
@@ -44,4 +44,4 @@ Open the `ngServe` tab to see the default application page or click
 
 This means we've got the installation right. 
 
-Exit the command thereafter. We'll now add some more agular code
+Exit the command thereafter. We'll now add some more angular code

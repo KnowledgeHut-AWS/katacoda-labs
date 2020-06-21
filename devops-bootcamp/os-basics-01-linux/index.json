@@ -9,7 +9,7 @@
         "title": "Archeology",
         "text": "01-archeology.md"
       },
-	  {
+      {
         "title": "Basics",
         "text": "02-basics.md"
       },
@@ -21,10 +21,10 @@
         "title": "Input/Output",
         "text": "04-io.md"
       },
-	   {
+      {
         "title": "Variables",
         "text": "05-variables.md"
-      }, 
+      },
       {
         "title": "Files",
         "text": "06-files.md"
@@ -41,6 +41,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu1804"
   }
 }
