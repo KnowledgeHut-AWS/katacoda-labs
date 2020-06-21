@@ -1,4 +1,4 @@
-# Environment Variables
+## Environment Variables
 Before we go much deeper we must understand environments and variables... A variable is a symbol to which we assign a value. The value 
 assigned is always a string, but that string can be used to represent many things. Variable names may only contain letters
 (a to z or A to Z), numbers ( 0 to 9) and the underscore character `_`. Convention dictates that variables are all uppercase

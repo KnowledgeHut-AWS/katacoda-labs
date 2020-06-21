@@ -1,4 +1,4 @@
-# Archeology 
+## Archeology 
 ## How not to repeat yourself repeat yourself repeat yourself in Linux
 ### In the beginning was the command line...
 

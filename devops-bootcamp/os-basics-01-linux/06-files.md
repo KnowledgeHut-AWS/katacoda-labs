@@ -1,4 +1,4 @@
-# Filesystems
+## Files and how to maniuplate them
 
 Ok, we'll start this by finding out where we are in the filesystem by looking at the present working directory with the
 `pwd`{{execute}} command. The same information is stored in the `$PWD` environment variable.

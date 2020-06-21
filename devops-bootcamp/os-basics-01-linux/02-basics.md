@@ -1,6 +1,4 @@
-# Basics 
-
-### Messy terminals
+## Messy terminals
 
 At certain point we may want to clean your screen. For that we can use `clear`{{execute}} command,
 or you can type ctrl-l (which is easier and quicker; and won't get you shouted at by the instructor for wasting time ;).
@@ -103,7 +101,7 @@ syntax. The output of the subshell is given as an argument of the current comman
 could do this:
 
 ```
-wc -l $(ls -A)
+wc -l $(history)
 ```{{execute}}
 
 Which runs `wc -l` on every file in the current directory (`-A` lists all files without the 'special' directories `.` and `..`).
