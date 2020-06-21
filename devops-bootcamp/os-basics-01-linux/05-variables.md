@@ -25,7 +25,7 @@ NUM=2
 echo "1$NUM3"
 ```{{execute}}
 
-See, it's a problem! The variable $NUM3 doesn't have a value so nothing is output for it. Solve it like this
+See, it's a problem! The variable `$NUM3` doesn't have a value so nothing is output for it. Solve it like this
 
 ```
 echo "1${NUM}3"

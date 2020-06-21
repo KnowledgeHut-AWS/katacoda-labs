@@ -64,8 +64,8 @@ they're pointless -- get it, dots, points... never mind), by using `ls -A`{{exec
 A lot of commands show big numbers in bytes. You can make most of them human readable using the `-h` flag. For example, the
 directory listing `ls -Al`{{execute}} is more digstable if you include it there, `ls -Alh`{{execute}}. You can make it easier
 to determine the type of the file too if you add a `-F` for filetype, which adds a symbol at the end of some files, such as
-an `*` to indicate executable files. Try it, it's cool: `ls -AlFh'. You can make the long listin easier to read again by 
-excluding the owner and group, using `ls -gAGFh'{{execute}}. (pronounced gagfuh). (not really).
+an `*` to indicate executable files. Try it, it's cool: `ls -lAFh`. You can make the long listin easier to read again by 
+excluding the owner and group, using `ls -gAGFh`{{execute}}. (pronounced gagfuh). (not really).
 
 ## Whats in a name?
 We can find the filename or directory at the end of a path with `basename /home/$USER/.bashrc`{{execute}}, or something similar,
@@ -161,4 +161,43 @@ find . -type d -name one
 
 ## X-Ray vision
 We can go deeper though, we can find files with only specific content using a tool called `grep`. This name comes from
-**g**lobal searches using a **re**gular expression and **p**rinting the matches. 
+**G**lobal searches using a **RE**gular expression and **P**rinting the matches. Let's see if we can find files with java
+classes in them (this works in Katacoda, which has some java files available by default), but first, `cd`{{execute}} home:
+
+```
+find . -type f -name *.java -exec grep 'public class [^,]* {' {} \;
+```{{execute}} 
+
+What does this do? It finds all java files from the current directory down, and executes grep on them, with the 'regular 
+expression' `public class [^,]* {'` which searches inside a file for a a line that contains public class, which is followed
+by any number of characters as long as they don't contain a `,` and which is followed by a `{'. The `\;` at the end indicates
+that the exec command (`grep` in this case) should be executed once per file. Alternatively, we could just pass all the files
+at once using `+`, but that won't work with `grep`.
+
+Why can't we just grep theresults of find without using the 'exec' syntax? Because find returns a list of file names, and 
+if we grep that we'll be looking at the names, not the contents of the files. We need to use the exec form to search within 
+the files that are found by the `find` command.
+
+If you want to see which files contain a match, rather than the matches themselves, you can add `-l` to grep (to 'list' files).
+
+```
+find . -type f -name *.java -exec grep 'public class [^,]* {' {} \;
+```{{execute}} 
+
+Grep can also be used directly with a filename, if you have one handy -- the `find` syntax is often used though to find
+files containing text. It is also quite common to pipe the output of a command to grep to find interesting lines. For example,
+you can pipe your `history` to `grep` to find `cat` commands:
+
+```
+history | grep cat
+```{{execute}}
+
+`grep` can search 'case insensitive' with the `-i flag`
+
+```
+history | grep -i CAT
+```{{execute}}
+
+## RegEx
+It would take way too long to go over regular expressions here -- it's way too big a topic. One of the best online tools
+for learning this is called [Regexr](https://regexr.com/). Spend a couple of hours looking at this and working out what it is doing.
