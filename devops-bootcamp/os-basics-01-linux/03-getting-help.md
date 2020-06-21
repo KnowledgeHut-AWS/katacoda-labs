@@ -1,4 +1,3 @@
-# Getting Help
 ## Or, how not to bore your instructor to death with dumb questions...
 
 A nice short one this time. There are many options with almost all commands. You do not need to remember all of these 
