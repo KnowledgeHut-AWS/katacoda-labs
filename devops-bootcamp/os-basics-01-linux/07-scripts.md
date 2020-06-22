@@ -145,7 +145,7 @@ chmod a+x ex4.sh
 ```{{execute}}
 
 
-This will find all the script files in the current directory (if you've been following along, then there are two of them),
+This will find all the script files in the current directory (if you've been following along, then there are five of them),
 and lets you know about each one it finds. Now, this is quite useful, but there are other ways to achieve the same thing
 that I'll leave as an exercise for you to find online. (I mean it, find 2 other ways of doing the same thing in bash).
 
@@ -222,7 +222,7 @@ else
   DO THIS IF ALL TESTS ARE FALSE
 fi
 ```
-But as with most things in bash, it's not quite that simple... 
+But, as with most things in bash, it's not quite that simple... 
 
 Let's start with the TEST-n bit. There are two test-commands in bash `[]` and `[[]]`. The second is preferable because it
 allows the use of common string comparison operators and automatically deals with variables with spaces in them. Let's just
@@ -235,7 +235,7 @@ X="This is X"
 Y="This is Y"
 
 # Syntax-A
-if ["$X" -ne "$Y"]; then
+if [ "$X" != "$Y" ]; then
     echo "wibble 1"
 fi
 
@@ -248,10 +248,11 @@ chmod a+x ex8.sh
 ./ex8.sh
 ```{{execute}}
 
-These two tests are equivalent. In Syntax-A we need to wrap the vars in quotes to allow bash to see them as a single
-value, otherwise the space will confusing things, and we need to use the comparitor function `-ne` (not equals) to compare
-the strings. This is all a bit awkward and difficult to write and to read.
+> Note that the `!=` operator would be changed to `-ne` if the vars were numbers rather than strings. The other comparisons
+> should be obvious: `-eq | ==`, `-lt | <`, `-gt | gt`, `-ge | >=`, `-le | <=`, etc. 
 
-However, with Syntax-B we are able to just use the variables without wrapping them in strings and we can just use the same
-string comparitor, `!=`, that we are familiar with from other programming languages. This is a shorter and clearer, making 
-it easier to write, more maintainable, and less likely to be wrong. In modern bash, we always use Syntax-B.
+These two syntaxes are equivalent. In **Syntax-A** we need to wrap the vars in quotes to allow bash to see them as a single
+value, otherwise the space will confusing things. This is all a bit awkward and difficult to write and to read. 
+
+However, with **Syntax-B** we are able to just use the variables without wrapping them in strings. This is a shorter and
+clearer, making it easier to write, more maintainable, and less likely to be wrong. In modern bash, we always use **Syntax-B**.
