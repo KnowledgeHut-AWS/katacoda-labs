@@ -311,12 +311,13 @@ being run, so `$1` is the first parameter. Here's a quick example:
 ```
 cat << "EOF" > ex10.sh
 #!/bin/bash
-echo 'Script name is: $0'
-[[ -z $1 ]] && echo 'First parameter: $1' || echo "give me some sugar"
-[[ -z $2 ]] && echo 'Second parameter: $2' || echo "give me more sugar"
+echo "Script name is: $0"
+[[ ! -z $1 ]] && echo "First parameter: $1" || echo "give me some sugar"
+[[ ! -z $2 ]] && echo "Second parameter: $2" || echo "give me more sugar"
 EOF
 chmod a+x ex10.sh
 ./ex10.sh
 ./ex10.sh wibble
 ./ex10.sh wibble wobble
 ```{{execute}}
+
