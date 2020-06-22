@@ -127,11 +127,15 @@ chmod +x ex3.sh
 ./ex3.sh
 ```{{execute}}
 
-Notice that I've put the `do` on a separate line this time. There is no need to do this, I just wanted to show you that you 
-can. I prefer not wasting a line, so we'l luse the `for ... ; do` format from now on.
-
 The `{1..10}` bit is called a 'range'. It generates numbers from 1 to 10 (pretty obvious, huh?). This isn't that useful though, because we don't often do this sort of
 thing in automation work. Often, we iterate over files instead (or other things). 
+
+> Notice that I've put the `do` on a separate line this time. There is no need to do this, I just wanted to show you that you 
+> can. I prefer not wasting a line, so we'l luse the `for ... ; do` format from now on.
+
+> Also notice that I have quoted the first "EOF" this time. This forces the shell to output variables without expaning the.
+> All that means is that the `$i` is written to the file as the string "$i" rather than being expanded. As that variable
+> curently has no value it would be expanded to an empty string, which changes the `echo` line to output nothing but a newline.
 
 ```
 cat << "EOF" > ex4.sh
@@ -143,7 +147,6 @@ EOF
 chmod a+x ex4.sh
 ./ex4.sh
 ```{{execute}}
-
 
 This will find all the script files in the current directory (if you've been following along, then there are five of them),
 and lets you know about each one it finds. Now, this is quite useful, but there are other ways to achieve the same thing
@@ -251,8 +254,43 @@ chmod a+x ex8.sh
 > Note that the `!=` operator would be changed to `-ne` if the vars were numbers rather than strings. The other comparisons
 > should be obvious: `-eq | ==`, `-lt | <`, `-gt | gt`, `-ge | >=`, `-le | <=`, etc. 
 
-These two syntaxes are equivalent. In **Syntax-A** we need to wrap the vars in quotes to allow bash to see them as a single
-value, otherwise the space will confusing things. This is all a bit awkward and difficult to write and to read. 
+These two example `if` statements are equivalent. In **Syntax-A** we need to wrap the vars in quotes to allow bash to see 
+them as a single value, otherwise the space will confusing things. This is all a bit awkward and difficult to write and 
+to read. 
 
 However, with **Syntax-B** we are able to just use the variables without wrapping them in strings. This is a shorter and
-clearer, making it easier to write, more maintainable, and less likely to be wrong. In modern bash, we always use **Syntax-B**.
+clearer, making it easier to write, more maintainable, and less likely to be wrong. In modern bash, we always use **Syntax-B**,
+so this is the one you should focus on. You will see lots of people writing **Syntax-A** though -- this is mostly because
+they have had no formal training and have picked up a lot of bad habits. You do not have this execuse, so if I ever catch
+you doing the wrong thing you'll be serverly punished to the full extent of the law. Also, people often use the 'old' syntax
+because they want their bash scripts to be compatible with other shells that don't support the modern syntax. There is absolutely
+no need to do this. Bash is ubiquitous and only hipsters and non-professionals use other shells. If in doubt, install bash,
+then you'll be ok to use bash syntax. Bash is so popular that a lot of other shells have adopted this this and other bash
+syntax too, so you'll probably be ok. Unless you're on a Mac, then nothing you do will ever be right.
+
+## Be selective
+Sometimes you have to many elif clauses and you want a more elegant and readable structure. Enter the `case` statement.
+
+```
+cat << EOF > .sh
+#!/bin/bash
+OS="Alpine"
+
+case $OS in
+  Alpine
+    echo -n "Alpine -- best"
+    ;;
+    
+  Debian | Ubuntu)
+    echo -n "Debian OS - acceptable"
+    ;;
+
+  Fedora | CentOS | RHEL)
+    echo -n "Fedora OS - run away"
+    ;;
+esac
+EOF
+chmod a+x .sh
+./.sh
+```{{execute}}
+

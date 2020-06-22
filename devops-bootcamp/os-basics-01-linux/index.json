@@ -32,6 +32,10 @@
       {
         "title": "Scripts",
         "text": "07-scripts.md"
+      },
+      {
+        "title": "Tests",
+        "text": "08-tests.md"
       }
     ],
     "intro": {
