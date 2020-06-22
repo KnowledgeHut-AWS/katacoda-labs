@@ -422,7 +422,7 @@ while getopts “abd” opt; do
 done
 EOF
 chmod a+x ex14.sh
-./ex14.sh
+./ex14.sh -bad
 ```{{execute}}
 
 Ultimately, there are lots of ways of parsing arguments in bash. We've only really scratched the surface here. If you're 
