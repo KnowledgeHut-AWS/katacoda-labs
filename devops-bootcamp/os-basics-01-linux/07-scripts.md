@@ -133,7 +133,7 @@ thing in automation work. Often, we iterate over files instead (or other things)
 > Notice that I've put the `do` on a separate line this time. There is no need to do this, I just wanted to show you that you 
 > can. I prefer not wasting a line, so we'l luse the `for ... ; do` format from now on.
 
-> Also notice that I have quoted the first "EOF" this time. This forces the shell to output variables without expaning the.
+> Also notice that I have quoted the first "EOF" this time. This forces the shell to output variables without expaning it.
 > All that means is that the `$i` is written to the file as the string "$i" rather than being expanded. As that variable
 > curently has no value it would be expanded to an empty string, which changes the `echo` line to output nothing but a newline.
 
@@ -268,29 +268,55 @@ no need to do this. Bash is ubiquitous and only hipsters and non-professionals u
 then you'll be ok to use bash syntax. Bash is so popular that a lot of other shells have adopted this this and other bash
 syntax too, so you'll probably be ok. Unless you're on a Mac, then nothing you do will ever be right.
 
-## Be selective
-Sometimes you have to many elif clauses and you want a more elegant and readable structure. Enter the `case` statement.
+## The case is closed
+Sometimes you have to many `elif` clauses and you want a more elegant and readable structure. Enter the `case` statement.
 
 ```
-cat << EOF > .sh
+cat << "EOF" > ex9.sh
 #!/bin/bash
 OS="Alpine"
 
 case $OS in
-  Alpine
-    echo -n "Alpine -- best"
+
+  Alpine)
+    echo "Alpine -- best"
     ;;
     
   Debian | Ubuntu)
-    echo -n "Debian OS - acceptable"
+    echo "Debian OS - acceptable"
     ;;
 
   Fedora | CentOS | RHEL)
-    echo -n "Fedora OS - run away"
+    echo "Fedora OS - run away"
     ;;
 esac
 EOF
-chmod a+x .sh
-./.sh
+chmod a+x ex9.sh
+./ex9.sh
 ```{{execute}}
 
+To be fair, I'm not sure that's actually more readable, but there are lots of examples I found on the web that demonstrate
+the power of this technique better than I can do here, and I didn't want to just rip them off so 
+[Check out the link here](https://www.thegeekstuff.com/2010/07/bash-case-statement/).
+
+## Don't argue with me
+You can pass arguments (parameters) to a script but dealing with them inside the script can be hard and confusing. That 
+probably doesn't shock you any more, so let's dive right in with the basic rules of arguments/parameters (both terms are
+common, but I think 'parameter' is formally correct, though sometimes we call the same thing 'switches' or 'flags').
+
+## Positional Parameters
+We use the `$` (dollar) sign and a number to designate a parameter. The first parameter, `$0` is the name of the script
+being run, so `$1` is the first parameter. Here's a quick example:
+
+```
+cat << "EOF" > ex10.sh
+#!/bin/bash
+echo 'Script name is: $0'
+[[ -z $1 ]] && echo 'First parameter: $1' || echo "give me some sugar"
+[[ -z $2 ]] && echo 'Second parameter: $2' || echo "give me more sugar"
+EOF
+chmod a+x ex10.sh
+./ex10.sh
+./ex10.sh wibble
+./ex10.sh wibble wobble
+```{{execute}}
