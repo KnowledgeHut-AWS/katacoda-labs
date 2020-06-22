@@ -11,3 +11,7 @@ longer than that, so practice, practice, practice until you understand
 it all and remember most of it. Then practice some more.
 
 Trust me, this is important. Learn it.
+
+## Further Reading
+[Linuxize](https://linuxize.com/) is an excellent resource with daytime and nighttime interface. You should search for bash.
+
