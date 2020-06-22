@@ -103,7 +103,7 @@ To run our script in our current session. Alternatively, you can use a `.` (dot)
 Bash scripts support loops, which is of course really useful. The basic syntax of a for statement is this:
 
 ```
-cat << EOF > ex2.sh
+cat << "EOF" > ex2.sh
 #!/bin/bash
 for i in 1 2 3 4 5 6 7 8 9; do
     echo $i
@@ -116,7 +116,7 @@ chmod +x ex2.sh
 Of course, in bash, nothing remains simple for long. We can use a 'range' to do this so much easier:
 
 ```
-cat << EOF > ex3.sh
+cat << "EOF" > ex3.sh
 #!/bin/bash
 for i in {1..10}
 do
@@ -134,7 +134,7 @@ The `{1..10}` bit is called a 'range'. It generates numbers from 1 to 10 (pretty
 thing in automation work. Often, we iterate over files instead (or other things). 
 
 ```
-cat << EOF > ex4.sh
+cat << "EOF" > ex4.sh
 #!/bin/bash
 for f in *.sh; do
     echo "Found script file: $f"
@@ -161,7 +161,7 @@ suitable for iterating over.
 Looping over arrays is interesting too, because of the weird syntax you have to use. Take this example:
 
 ```
-cat << EOF > ex5.sh
+cat << "EOF" > ex5.sh
 #!/bin/bash
 BOOKS=('In Search of Lost Time' 'Don Quixote' 'Ulysses' 'The Great Gatsby')
 
@@ -177,7 +177,7 @@ If you simply try to iterate over `$BOOKS` you'll get a completely different res
 
 
 ```
-cat << EOF > ex6.sh
+cat << "EOF" > ex6.sh
 #!/bin/bash
 BOOKS=('In Search of Lost Time' 'Don Quixote' 'Ulysses' 'The Great Gatsby')
 
@@ -197,7 +197,7 @@ they're useful.
 It's also worth noting that there is another version of the `for` loop that follows the `C` syntax. It looks like this:
 
 ```
-cat << EOF > ex7.sh
+cat << "EOF" > ex7.sh
 #!/bin/bash
 for ((i = 0 ; i <= 10 ; i++)); do
   echo "Counter: $i"
@@ -229,7 +229,7 @@ allows the use of common string comparison operators and automatically deals wit
 take a quick look at that:
 
 ```
-cat << EOF > ex8.sh
+cat << "EOF" > ex8.sh
 #!/bin/bash
 X="This is X"
 Y="This is Y"
