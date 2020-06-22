@@ -100,6 +100,19 @@ sudo !!
 When you hit enter, you should get a new command line with the previous command exanded into it, but we put sudo before it, 
 so...
 
+To edit the previous command in a proper editor, you can type `fc`, but first you shoud change the editor to something a 
+little more professional than nano, using this command:
+
+```
+sudo update-alternatives --config editor
+```{{execute}}
+
+And selecting the 'vim.basic' option (which is #4 in my katacoda window and #3 on my WSL2-Ubuntu).
+
+Now, to edit that command you can use `fc`{{execute}} (please, always choose vim, because you're professionals now -- have
+some pride in your work and don't choose amateur tools).
+
+
 Get used to this, you are not expected to type the same command twice. It is usually slow and error prone. It is always 
 better to pull a previous command from history.
 
